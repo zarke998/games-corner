@@ -1,0 +1,89 @@
+@font-face {
+  src: url("../fonts/Agency FB.ttf");
+  font-family: "Agency FB";
+}
+
+body, a {
+  font-family: "Agency FB";
+  color: #FFF;
+}
+
+body {
+  background-color: #0C0C0C;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#headerNav {
+  background-color: #121212;
+  border-bottom: 1px solid #D20000;
+  position: relative;
+}
+
+#headerNav #logo img {
+  height: 35px;
+}
+
+#headerNav #logo h1 {
+  font-size: 26px;
+}
+
+#headerNav #navMenu li {
+  font-size: 20px;
+}
+
+#headerNav #navMenu li a:hover {
+  color: #de0000;
+}
+
+#headerIntro #slider {
+  border: 1px solid #4D4D4D;
+  position: relative;
+}
+
+#headerIntro #slider .indicators {
+  padding-left: 0px;
+}
+
+#headerIntro #sliderTitle {
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+}
+
+#headerIntro .frameLink {
+  position: relative;
+  border: 1px solid #4D4D4D;
+}
+
+#headerIntro .frameLink img {
+  width: 100%;
+}
+
+#headerIntro .frameLinkOverlay {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#headerIntro .frameLinkOverlay a {
+  font-size: 18px;
+}
+
+#headerIntro .frameLinkOverlay a:hover {
+  color: #2cc7ca;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  #menuBtn {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
