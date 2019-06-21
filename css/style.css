@@ -79,11 +79,108 @@ body {
   text-decoration: none;
 }
 
+.contentSectionMain {
+  height: 800px;
+}
+
+.contentSectionMain h2 {
+  font-size: 28px;
+}
+
+.contentSectionMain .homeNewsItem {
+  height: 175px;
+}
+
+.contentSectionMain .homeNewsItemImage img {
+  width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid #4D4D4D;
+}
+
+.contentSectionMain .homeNewsItemText {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.contentSectionMain .homeNewsItemText a {
+  font-size: 24px;
+}
+
+.contentSectionSide #upcomingGames {
+  border: 1px solid #4D4D4D;
+}
+
+.contentSectionSide #upcomingGames table thead tr {
+  border-bottom: 1px solid #4D4D4D;
+}
+
+.contentSectionSide #upcomingGames table thead tr th {
+  color: #FFF;
+  font-weight: normal;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.contentSectionSide #upcomingGames table thead tr th:first-child {
+  text-align: center;
+  padding-right: 0px;
+}
+
+.contentSectionSide #upcomingGames table thead tr th:last-child {
+  text-align: right;
+  padding-left: 0px;
+}
+
+.contentSectionSide #upcomingGames table tbody tr:nth-of-type(odd) {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.contentSectionSide #upcomingGames table tbody tr td {
+  color: #FFF;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  vertical-align: middle;
+}
+
+.contentSectionSide #upcomingGames table tbody tr td:first-child {
+  width: 65%;
+  padding-right: 0px;
+}
+
+.contentSectionSide #upcomingGames table tbody tr td:last-child {
+  padding-left: 0px;
+  width: 35%;
+  text-align: right;
+}
+
 @media screen and (max-width: 768px) {
   #menuBtn {
     position: absolute;
     right: 5px;
     top: 10px;
+  }
+}
+
+@media screen and (max-width: 1127px) {
+  #headerIntro .frameLinkOverlay a {
+    font-size: 16px;
+  }
+  .contentSectionMain .homeNewsItemText a {
+    font-size: 22px;
+  }
+  .contentSectionMain .homeNewsItemText p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .contentSectionSide #upcomingGames table thead tr th {
+    font-size: 16px;
+  }
+  .contentSectionSide #upcomingGames table tbody tr td {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
