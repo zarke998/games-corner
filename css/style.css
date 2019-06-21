@@ -12,6 +12,21 @@ body {
   background-color: #0C0C0C;
 }
 
+ul {
+  list-style-type: none;
+}
+
+.unclickable {
+  -webkit-user-select: none;
+  /* Safari 3.1+ */
+  -moz-user-select: none;
+  /* Firefox 2+ */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Standard syntax */
+}
+
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
@@ -79,10 +94,6 @@ body {
   text-decoration: none;
 }
 
-.contentSectionMain {
-  height: 800px;
-}
-
 .contentSectionMain h2 {
   font-size: 28px;
 }
@@ -108,52 +119,145 @@ body {
   font-size: 24px;
 }
 
-.contentSectionSide #upcomingGames {
+.contentSectionSide #upcomingGames .gc-table thead tr th:first-child {
+  text-align: center;
+}
+
+.contentSectionSide #upcomingGames .gc-table thead tr th:last-child {
+  text-align: right;
+}
+
+.contentSectionSide #upcomingGames .gc-table tbody tr td:first-child {
+  width: 65%;
+}
+
+.contentSectionSide #upcomingGames .gc-table tbody tr td:last-child {
+  width: 35%;
+  text-align: right;
+}
+
+.contentSectionSide .advertisement {
+  border: 1px solid #4D4D4D;
+  position: relative;
+}
+
+.contentSectionSide .advertisement img {
+  width: 100%;
+}
+
+.contentSectionSide .advertisement p {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 18px;
+  opacity: 0.2;
+}
+
+.contentSectionSide #socialsLinks {
+  font-size: 38px;
+}
+
+.contentSectionSide #socialsLinks li {
+  margin: 0px 8px;
+}
+
+.contentSectionSide #socialsLinks li:nth-child(1) i {
+  color: #4167B2;
+}
+
+.contentSectionSide #socialsLinks li:nth-child(1) i:hover {
+  color: #6183c5;
+}
+
+.contentSectionSide #socialsLinks li:nth-child(2) i {
+  color: #00ACED;
+}
+
+.contentSectionSide #socialsLinks li:nth-child(2) i:hover {
+  color: #21c2ff;
+}
+
+.contentSectionSide #socialsLinks li:nth-child(3) i {
+  color: #a0067e;
+}
+
+.contentSectionSide #socialsLinks li:nth-child(3) i:hover {
+  color: #d108a5;
+}
+
+.contentSectionSide #socialsLinks li:nth-child(4) i {
+  color: #C51A1E;
+}
+
+.contentSectionSide #socialsLinks li:nth-child(4) i:hover {
+  color: #e32f33;
+}
+
+.contentSectionSide #socialsLinks li:nth-child(5) i {
+  color: #6848A4;
+}
+
+.contentSectionSide #socialsLinks li:nth-child(5) i:hover {
+  color: #8264bb;
+}
+
+.contentSectionSide #youtubeLatestVideo iframe {
+  width: 100%;
+  height: 190px;
   border: 1px solid #4D4D4D;
 }
 
-.contentSectionSide #upcomingGames table thead tr {
-  border-bottom: 1px solid #4D4D4D;
+.contentSectionSide #forumSignUp {
+  border: 1px solid #4D4D4D;
 }
 
-.contentSectionSide #upcomingGames table thead tr th {
-  color: #FFF;
-  font-weight: normal;
+.contentSectionSide #forumSignUp h4 {
+  font-size: 28px;
+}
+
+.contentSectionSide #forumSignUp button {
+  width: 40%;
+  background-color: #0E35B5;
+  border-color: #0E35B5;
+  border-radius: 2px;
   font-size: 18px;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 
-.contentSectionSide #upcomingGames table thead tr th:first-child {
+.contentSectionSide #forumSignUp button:hover {
+  background-color: #1243e4;
+  border-color: #1243e4;
+}
+
+.contentSectionSide #mostActiveForumMembers {
+  border: 1px solid #4D4D4D;
+}
+
+.contentSectionSide #mostActiveForumMembers .gc-table {
+  border: none;
+}
+
+.contentSectionSide #mostActiveForumMembers .gc-table thead tr th {
+  border-bottom: none;
+  border-top: 1px solid #4D4D4D;
+}
+
+.contentSectionSide #mostActiveForumMembers .gc-table thead tr th:nth-child(1) {
   text-align: center;
-  padding-right: 0px;
 }
 
-.contentSectionSide #upcomingGames table thead tr th:last-child {
+.contentSectionSide #mostActiveForumMembers .gc-table thead tr th:nth-child(3) {
   text-align: right;
-  padding-left: 0px;
 }
 
-.contentSectionSide #upcomingGames table tbody tr:nth-of-type(odd) {
-  background: rgba(0, 0, 0, 0.3);
+.contentSectionSide #mostActiveForumMembers .gc-table tbody tr td {
+  border-color: #4D4D4D;
 }
 
-.contentSectionSide #upcomingGames table tbody tr td {
-  color: #FFF;
-  font-size: 18px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  vertical-align: middle;
+.contentSectionSide #mostActiveForumMembers .gc-table tbody tr td:nth-child(1) {
+  text-align: center;
 }
 
-.contentSectionSide #upcomingGames table tbody tr td:first-child {
-  width: 65%;
-  padding-right: 0px;
-}
-
-.contentSectionSide #upcomingGames table tbody tr td:last-child {
-  padding-left: 0px;
-  width: 35%;
+.contentSectionSide #mostActiveForumMembers .gc-table tbody tr td:nth-child(3) {
   text-align: right;
 }
 
@@ -182,5 +286,69 @@ body {
   .contentSectionSide #upcomingGames table tbody tr td {
     font-size: 16px;
   }
+}
+
+.input-field input {
+  color: white;
+  font-weight: normal;
+  font-size: 18px !important;
+}
+
+.input-field input + label {
+  font-size: 18px;
+}
+
+.input-field input:focus + label {
+  color: white !important;
+}
+
+.input-field input:focus {
+  border-bottom: 1px solid white !important;
+  -webkit-box-shadow: 0 1px 0 0 white !important;
+          box-shadow: 0 1px 0 0 white !important;
+}
+
+.gc-table {
+  border: 1px solid #4D4D4D;
+}
+
+.gc-table thead tr {
+  border-bottom: 1px solid #4D4D4D;
+}
+
+.gc-table thead tr th {
+  color: #FFF;
+  font-weight: normal;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.gc-table thead tr th:first-child {
+  padding-right: 0px;
+}
+
+.gc-table thead tr th:last-child {
+  padding-left: 0px;
+}
+
+.gc-table tbody tr:nth-of-type(odd) {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.gc-table tbody tr td {
+  color: #FFF;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  vertical-align: middle;
+}
+
+.gc-table tbody tr td:first-child {
+  padding-right: 0px;
+}
+
+.gc-table tbody tr td:last-child {
+  padding-left: 0px;
 }
 /*# sourceMappingURL=style.css.map */
