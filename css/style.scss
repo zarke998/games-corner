@@ -73,28 +73,6 @@ ul{
             left: 15px;
         }
     }
-    .frameLink{
-        position: relative;
-        border: 1px solid $imageBorderGrey;
-        img{
-            width: 100%;
-        }
-
-        &Overlay{
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
-            width: 100%;
-            background: rgba(#000,0.8);
-            a{
-                font-size: 18px;
-                &:hover{
-                    color: $linkHoverBlue;
-                    text-decoration: none;
-                }
-            }
-        }
-    }
 
 }
 .contentSection{
@@ -225,14 +203,6 @@ ul{
             }
             button{
                 width: 40%;
-                background-color: $primaryBlue;
-                border-color: $primaryBlue;
-                border-radius: 2px;
-                font-size: 18px;
-                &:hover{
-                    background-color: lighten($primaryBlue, 10%);
-                    border-color: lighten($primaryBlue,10%);
-                }
             }
         }
         #mostActiveForumMembers{
@@ -269,6 +239,20 @@ ul{
                         {
                             text-align: right;
                         }
+                    }
+                }
+            }
+        }
+        #buildYourPc{
+            img{
+                border: 1px solid $imageBorderGrey;
+            }
+        }
+        #twitchChannel{
+            .frameLinkOverlay{
+                a{
+                    &:hover{
+                        color: $twitchPurple;
                     }
                 }
             }
@@ -395,6 +379,38 @@ ul{
             td:last-child{
                 padding-left: 0px;
 
+            }
+        }
+    }
+}
+.gc-button{
+    background-color: $primaryBlue;
+    border-color: $primaryBlue;
+    border-radius: 2px;
+    font-size: 18px;
+    &:hover{
+        background-color: lighten($primaryBlue, 10%);
+        border-color: lighten($primaryBlue,10%);
+    }
+}
+.frameLink{
+    position: relative;
+    border: 1px solid $imageBorderGrey;
+    img{
+        width: 100%;
+    }
+
+    &Overlay{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        background: rgba(#000,0.8);
+        a{
+            font-size: 18px;
+            &:hover{
+                color: $linkHoverBlue;
+                text-decoration: none;
             }
         }
     }

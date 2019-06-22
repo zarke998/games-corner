@@ -68,32 +68,6 @@ ul {
   left: 15px;
 }
 
-#headerIntro .frameLink {
-  position: relative;
-  border: 1px solid #4D4D4D;
-}
-
-#headerIntro .frameLink img {
-  width: 100%;
-}
-
-#headerIntro .frameLinkOverlay {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.8);
-}
-
-#headerIntro .frameLinkOverlay a {
-  font-size: 18px;
-}
-
-#headerIntro .frameLinkOverlay a:hover {
-  color: #2cc7ca;
-  text-decoration: none;
-}
-
 .contentSectionMain h2 {
   font-size: 28px;
 }
@@ -217,15 +191,6 @@ ul {
 
 .contentSectionSide #forumSignUp button {
   width: 40%;
-  background-color: #0E35B5;
-  border-color: #0E35B5;
-  border-radius: 2px;
-  font-size: 18px;
-}
-
-.contentSectionSide #forumSignUp button:hover {
-  background-color: #1243e4;
-  border-color: #1243e4;
 }
 
 .contentSectionSide #mostActiveForumMembers {
@@ -259,6 +224,14 @@ ul {
 
 .contentSectionSide #mostActiveForumMembers .gc-table tbody tr td:nth-child(3) {
   text-align: right;
+}
+
+.contentSectionSide #buildYourPc img {
+  border: 1px solid #4D4D4D;
+}
+
+.contentSectionSide #twitchChannel .frameLinkOverlay a:hover {
+  color: #6848A4;
 }
 
 @media screen and (max-width: 768px) {
@@ -350,5 +323,43 @@ ul {
 
 .gc-table tbody tr td:last-child {
   padding-left: 0px;
+}
+
+.gc-button {
+  background-color: #0E35B5;
+  border-color: #0E35B5;
+  border-radius: 2px;
+  font-size: 18px;
+}
+
+.gc-button:hover {
+  background-color: #1243e4;
+  border-color: #1243e4;
+}
+
+.frameLink {
+  position: relative;
+  border: 1px solid #4D4D4D;
+}
+
+.frameLink img {
+  width: 100%;
+}
+
+.frameLinkOverlay {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.frameLinkOverlay a {
+  font-size: 18px;
+}
+
+.frameLinkOverlay a:hover {
+  color: #2cc7ca;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
