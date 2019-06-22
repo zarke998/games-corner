@@ -1,4 +1,4 @@
-$topNavBlack: #121212;
+ $topNavBlack: #121212;
 $topNavBorderRed: #D20000;
 $bodyBlack: #0C0C0C;
 // $navLinkHoverRed: #B90000;
@@ -19,6 +19,7 @@ $footerBlack: #090909;
 }
 body,a{
     font-family: "Agency FB";
+    text-rendering: auto;
     color: #FFF;
 }
 body{

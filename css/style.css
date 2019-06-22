@@ -5,6 +5,7 @@
 
 body, a {
   font-family: "Agency FB";
+  text-rendering: auto;
   color: #FFF;
 }
 
