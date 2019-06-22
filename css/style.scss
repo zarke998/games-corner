@@ -14,12 +14,11 @@ $twitterBlue: #00ACED;
 $footerBlack: #090909;
 
 @font-face{
-    src: url("../fonts/Agency FB.ttf");
+    src: url("../fonts/agency.ttf");
     font-family: "Agency FB";
 }
 body,a{
     font-family: "Agency FB";
-    text-rendering: auto;
     color: #FFF;
 }
 body{
