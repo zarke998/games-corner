@@ -72,13 +72,13 @@ ul {
   font-size: 28px;
 }
 
-.contentSectionMain .homeNewsItem {
+.contentSectionMain .homeNewsItemImage {
   height: 175px;
 }
 
 .contentSectionMain .homeNewsItemImage img {
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border: 1px solid #4D4D4D;
@@ -255,14 +255,6 @@ ul {
   font-size: 18px;
 }
 
-@media screen and (max-width: 768px) {
-  #menuBtn {
-    position: absolute;
-    right: 5px;
-    top: 10px;
-  }
-}
-
 @media screen and (max-width: 1127px) {
   #headerIntro .frameLinkOverlay a {
     font-size: 16px;
@@ -279,6 +271,68 @@ ul {
   }
   .contentSectionSide #upcomingGames table tbody tr td {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #menuBtn {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+  }
+  .contentSectionMain .homeNewsItemImage {
+    height: 200px;
+  }
+  .contentSectionSide #youtubeLatestVideo iframe {
+    height: 250px;
+  }
+  #footerContent .footerContentLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #footerContent .footerContentLinks {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #footerContent .footerContentLinks div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #headerIntro #slider .carousel-indicators {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #headerNav #menuBtn {
+    right: 5px;
+  }
+  .contentSectionMain .homeNewsItemImage {
+    height: 150px;
+  }
+  .contentSectionSide #buildYourPc, .contentSectionSide #twitchChannel {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 0px;
+  }
+  .contentSectionSide #youtubeLatestVideo iframe {
+    height: 190px;
   }
 }
 

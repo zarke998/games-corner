@@ -85,13 +85,13 @@ ul{
 
         .homeNewsItem{
             
-            height: 175px;
+            // height: 175px;
             &Image{
-                // height: 175px;
+                height: 175px;
                 
                 img{
                     width: 100%;
-                    min-height: 100%;
+                    height: 100%;
                     object-fit: cover;
                     border: 1px solid $imageBorderGrey;
                 }
@@ -288,13 +288,6 @@ ul{
 
 
 // Media queries
-@media screen and (max-width: 768px){
-    #menuBtn{
-        position: absolute;
-        right: 5px;
-        top: 10px;
-    }
-}
 @media screen and (max-width: 1127px){
     #headerIntro{
         .frameLink{
@@ -341,6 +334,93 @@ ul{
         }
     }
     
+}
+@media screen and (max-width: 768px){
+    #menuBtn{
+        position: absolute;
+        right: 5px;
+        top: 10px;
+    }
+    .contentSection{
+        &Main{
+            .homeNewsItem{
+                &Image{
+                    height: 200px;
+                }
+            }
+        }
+        &Side{
+            #youtubeLatestVideo{
+                iframe{
+                    height: 250px;
+                }
+            }
+        }
+    }
+    #footer{
+        &Content{
+            .footerContentLinks{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 575px){
+    #headerIntro{
+        #slider{
+            }
+            
+        }
+    #footer{
+        &Content{
+            .footerContentLinks{
+                align-items: flex-start;
+                div{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    #headerIntro{
+        #slider{
+            .carousel-indicators{
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px){
+    #headerNav{
+        #menuBtn{
+            right: 5px;
+        }
+    }
+    .contentSection{
+        &Main{
+            .homeNewsItem{
+                &Image{
+                    height: 150px;
+                }
+            }
+        }
+        &Side{
+            #buildYourPc, #twitchChannel{
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin-left: 0px;
+            }
+            #youtubeLatestVideo{
+                iframe{
+                    height: 190px;
+                }
+            }
+        }
+    }
 }
 // Materialize input field colors
 .input-field input{
@@ -404,7 +484,6 @@ ul{
             }
             td:last-child{
                 padding-left: 0px;
-
             }
         }
     }
