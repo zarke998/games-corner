@@ -11,6 +11,7 @@ $twitchPurple: #6848A4;
 $youtubeRed: #C51A1E;
 $instagramPink: #a0067e;
 $twitterBlue: #00ACED;
+$footerBlack: #090909;
 
 @font-face{
     src: url("../fonts/Agency FB.ttf");
@@ -258,6 +259,31 @@ ul{
             }
         }
     }
+}
+#footer{
+    background-color: $footerBlack;
+    border-top: 2px solid $imageBorderGrey;
+    &Content{
+        div{
+            h4,h5{
+                font-size: 24px;
+            }
+            ul{
+                li{
+                    a{
+                        font-size: 18px;
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    p{
+        font-size: 18px;
+    }
+    
 }
 
 

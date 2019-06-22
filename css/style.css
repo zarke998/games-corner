@@ -234,6 +234,27 @@ ul {
   color: #6848A4;
 }
 
+#footer {
+  background-color: #090909;
+  border-top: 2px solid #4D4D4D;
+}
+
+#footerContent div h4, #footerContent div h5 {
+  font-size: 24px;
+}
+
+#footerContent div ul li a {
+  font-size: 18px;
+}
+
+#footerContent div ul li a:hover {
+  text-decoration: none;
+}
+
+#footer p {
+  font-size: 18px;
+}
+
 @media screen and (max-width: 768px) {
   #menuBtn {
     position: absolute;
