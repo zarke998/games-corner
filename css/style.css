@@ -427,7 +427,7 @@ ul {
 
 @media screen and (max-width: 575px) {
   #headerWallpaper {
-    height: 280px;
+    height: 250px;
   }
   #news #newsShowing {
     -webkit-box-pack: start !important;
