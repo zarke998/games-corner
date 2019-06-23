@@ -12,6 +12,8 @@ $youtubeRed: #C51A1E;
 $instagramPink: #a0067e;
 $twitterBlue: #00ACED;
 $footerBlack: #090909;
+$pageSkipGrey: #999999;
+$paginationGrey: #444444;
 
 @font-face{
     src: url("../fonts/agency.woff");
@@ -42,11 +44,17 @@ ul{
     border-bottom: 1px solid $topNavBorderRed;
     position: relative;
     #logo{
-        img{
-            height: 35px;
-        }
-        h1{
-            font-size: 26px;
+        a{
+            &:hover{
+                text-decoration: none;
+                color: #FFF;
+            }
+            img{
+                height: 35px;
+            }
+            h1{
+                font-size: 26px;
+            }
         }
     }
 
@@ -286,6 +294,100 @@ ul{
     
 }
 
+// NEWS Page
+#headerWallpaper{
+    height: 320px;
+    background-image: url("../images/header-wallpapers/battlefield.jpg");
+    background-size: cover;
+    background-position: center top;
+    border-bottom: 1px solid $imageBorderGrey;
+}
+#news{
+    #search{
+        position: relative;
+        i{
+            display: block;
+            position: absolute;
+            top: 12px;
+            left: 15px;
+            z-index: 1;
+        }
+        &Input{
+            border: none;
+            padding: 20px 40px;
+            border-radius: 0px;
+            background-color: #161616;
+            font-family: "Agency FB";
+            font-size: 18px;
+            color: #FFF;
+            &::placeholder{
+                color: $imageBorderGrey;
+            }
+            &:focus{
+                box-shadow: 0 0 0 0.2rem rgba($primaryBlue,0.2);
+                z-index: 0;
+            }
+        }
+    }
+    .pagination{
+
+        li{
+            &.active{
+                background-color: $primaryBlue;
+            }
+            &.page-skip{
+                a{
+                    color: $pageSkipGrey;
+                }
+            }
+            &.disabled{
+                a{
+                    color: $paginationGrey;
+                }
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+    #newsShowing{
+        span{
+            font-size: 24px;
+            
+        }
+        input{
+            margin-bottom: 0px;
+        }
+        div{
+            ul{
+                li{
+                    span{
+                        color: $primaryBlue;
+                    }
+                }
+            }
+            .caret{
+                fill: #FFF;
+            }
+        }
+    }
+    &Content{
+        div{
+            flex:0 0 31%;
+            margin-top: 50px;
+            P{
+                margin-bottom: 0px;
+                font-size: 16px;
+            }
+            img{
+                border: 1px solid $imageBorderGrey;
+            }
+            a{
+                font-size: 24px;
+            }
+        }
+    }
+}
 
 // Media queries
 @media screen and (max-width: 1127px){
@@ -335,6 +437,19 @@ ul{
     }
     
 }
+@media screen and (max-width: 991px){
+    #news{
+        &Content{
+            div{
+                flex: 0 0 48%;
+            }
+        }
+        .pagination{
+            display: flex !important;
+            justify-content: center;
+        }
+    }
+}
 @media screen and (max-width: 768px){
     #menuBtn{
         position: absolute;
@@ -374,6 +489,19 @@ ul{
             }
             
         }
+    #news{
+        #newsShowing{
+            justify-content: start !important;
+            div{
+                flex: 1;
+            }
+        }
+        &Content{
+            div{
+                flex: 0 0 98%;
+            }
+        }
+    }
     #footer{
         &Content{
             .footerContentLinks{
@@ -441,8 +569,6 @@ ul{
     box-shadow: 0 1px 0 0 white !important;
 
   }
-
-
 
 // My custom classes
 .gc-table{
