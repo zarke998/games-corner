@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <link rel="stylesheet" type="text/css" href="css/nouislider.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Games Corner | News</title>
+</head>
+
+<body>
+    <div id="headerNavBlue" class="headerNav container-fluid px-2 px-sm-4 gc-nav-blue">
+        <nav class="navbar navbar-expand-lg px-2">
+            <div id="logo" class="mr-md-5 ml-md-0 mx-auto py-lg-0 py-1">
+                <a href="index.html" class="d-flex align-items-center">
+                    <img src="images/logo.png" alt="Logo">
+                    <h1 class="text-uppercase mb-0 ml-2">Games corner</h1>
+                </a>
+            </div>
+            <button id="menuBtn" class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul id="navMenu" class="navbar-nav w-100">
+                    <li class="nav-item mx-1">
+                        <a class="nav-link text-center" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link text-center" href="game-list.html">Game list</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link text-center" href="#">Build your PC</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link text-center" href="#">Game art</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link text-center" href="#">Forum</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link text-center" href="#">About us</a>
+                    </li>
+                    <li class="nav-item ml-lg-auto ml-4">
+                        <a class="nav-link text-center" href="#">Account <i class="fas fa-user ml-2"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="videoGamesWallpaper" class="headerWallpaper container-fluid px-0">
+        <img src="images/header-wallpapers/nature.jpg" class="w-100" alt="Wallpaper">
+    </div>
+
+    <div id="videoGames" class="container-fluid px-4 py-4 mb-4">
+        <h2 class="text-uppercase text-center mb-5">Video games</h2>
+        <div class="row mx-0 px-2 mt-5">
+            <div id="filterWrapper" class="col-12 col-md-3 px-0 pr-4 mb-4">
+                <div class="filterSection mb-5">
+                    <h3 class="text-uppercase mb-4">Genres</h3>
+                    <ul class="collection">
+                        <form action="#" class="d-flex flex-row flex-md-column flex-wrap">
+                            <li class="collection-item mr-3">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>Action</span>
+                                    </label>
+                                </p>
+                            </li>
+                            <li class="collection-item mr-3">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>Adventure</span>
+                                    </label>
+                                </p>
+                            </li>
+                            <li class="collection-item mr-3">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>Casual</span>
+                                    </label>
+                                </p>
+                            </li>
+                            <li class="collection-item mr-3">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>Indie</span>
+                                    </label>
+                                </p>
+                            </li>
+                            <li class="collection-item mr-3">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>Massively Multiplayer</span>
+                                    </label>
+                                </p>
+                            </li>
+                            <li class="collection-item mr-3">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>Racing</span>
+                                    </label>
+                                </p>
+                            </li>
+                            <li class="collection-item mr-3">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>RPG</span>
+                                    </label>
+                                </p>
+                            </li>
+                            <li class="collection-item mr-3">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>Simulation</span>
+                                    </label>
+                                </p>
+                            </li>
+                            <li class="collection-item mr-3">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>Sports</span>
+                                    </label>
+                                </p>
+                            </li>
+                            <li class="collection-item mr-3">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>Strategy</span>
+                                    </label>
+                                </p>
+                            </li>
+                        </form>
+
+                    </ul>
+                </div>
+                <div class="filterSection mb-5">
+                    <h3 class="text-uppercase mb-4">Platforms</h3>
+                    <ul class="collection">
+                        <form action="#" class="d-flex flex-row flex-md-column flex-wrap">
+                            <li class="collection-item mr-3">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>PC</span>
+                                    </label>
+                                </p>
+                            </li>
+                            <li class="collection-item mr-3">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>PlayStation 4</span>
+                                    </label>
+                                </p>
+                            </li>
+                            <li class="collection-item mr-3">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>Xbox One</span>
+                                    </label>
+                                </p>
+                            </li>
+                            <li class="collection-item mr-3">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>Nintendo Switch</span>
+                                    </label>
+                                </p>
+                            </li>
+                            <li class="collection-item mr-3">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>PlayStation 3</span>
+                                    </label>
+                                </p>
+                            </li>
+                            <li class="collection-item mr-3">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>XBOX 360</span>
+                                    </label>
+                                </p>
+                            </li>
+                            <li class="collection-item mr-3">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>Wii</span>
+                                    </label>
+                                </p>
+                            </li>
+                            <li class="collection-item mr-3">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>Wii U</span>
+                                    </label>
+                                </p>
+                            </li>
+                        </form>
+
+                    </ul>
+                </div>
+                <div class="filterSection">
+                    <h3 class="text-uppercase mb-4">Price</h3>
+                    <ul class="collection">
+                        <form action="#" class="d-flex flex-row flex-md-column flex-wrap">
+                            <li class="collection-item mr-3">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>Free to Play</span>
+                                    </label>
+                                </p>
+                            </li>
+                            <li class="collection-item mb-3 mr-3">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>Paid</span>
+                                    </label>
+                                </p>
+                            </li>
+                            <li class="collection-item mr-3 flex-grow-1">
+                                <div id="noui-slider-wrapper">
+                                    <div id="noui-slider" class="mb-2"></div>
+                                    <div id="noui-slider-values"></div>
+                                </div>
+                            </li>
+                        </form>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div id="videoGamesNav" class="row mb-5 pl-3">
+                    <div class="col-12 col-sm-6 col-lg-3 order-3 order-sm-2 order-lg-3 d-flex align-items-end">
+                        <form class="w-100">
+                            <div id="search" class="input-group">
+                                <i class="fas fa-search"></i>
+                                <input type="search" class="form-control" id="searchInput" placeholder="search">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-4 px-0 mb-lg-0 order-1 order-lg-2 d-flex align-items-end">
+                        <ul class="pagination d-flex justify-content-center w-100 my-0">
+                            <li class="page-skip disabled"><a href="#!"><i class="material-icons">chevron_left</i></a>
+                            </li>
+                            <li class="active"><a href="#!">1</a></li>
+                            <li class="waves-effect"><a href="#!">2</a></li>
+                            <li class="waves-effect"><a href="#!">3</a></li>
+                            <li class="waves-effect"><a href="#!">4</a></li>
+                            <li class="waves-effect"><a href="#!">5</a></li>
+                            <li class="page-skip waves-effect"><a href="#!"><i
+                                        class="material-icons">chevron_right</i></a></li>
+                        </ul>
+                    </div>
+                    <div id="newsShowing"
+                        class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-2 order-sm-3 order-lg-1 d-flex align-items-end">
+                        <span class="text-center ml-0 ml-sm-auto ml-lg-0">Sort by</span>
+                        <div class="input-field my-0 d-sm-flex ml-3">
+                            <select>
+                                <option value="az">Title A-Z</option>
+                                <option value="za">Title Z-A</option>
+                                <option value="pup">Price ascending</option>
+                                <option value="pdown">Price descending</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div id="videoGamesList" class="row mb-0 pl-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 videoGamesListItem mb-5">
+                        <img src="images/game-covers/assassins-creed-odyssey.jpg" alt="Game cover" class="w-100">
+                        <a href="#" class="d-block text-center">Assassins Creed Odyssey</a>
+                        <p class="text-center my-0">Release date: 19.11.2018</p>
+                        <p class="text-center my-0">Platform: PC,PS4,XboxOne</p>
+                        <p class="text-center my-0">Price at release: 49.99$</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 videoGamesListItem mb-5">
+                        <img src="images/game-covers/apex-legends.jpg" alt="Game cover" class="w-100">
+                        <a href="#" class="d-block text-center">Apex Legends</a>
+                        <p class="text-center my-0">Release date: 06.08.2018</p>
+                        <p class="text-center my-0">Platform: PC</p>
+                        <p class="text-center my-0">Price at release: Free</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 videoGamesListItem mb-5">
+                        <img src="images/game-covers/battlefield-v.jpg" alt="Game cover" class="w-100">
+                        <a href="#" class="d-block text-center">Battlefield V</a>
+                        <p class="text-center my-0">Release date: 13.01.2019</p>
+                        <p class="text-center my-0">Platform: PC, PS4</p>
+                        <p class="text-center my-0">Price at release: 69.99$</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 videoGamesListItem mb-5">
+                        <img src="images/game-covers/call-of-duty-ww2.jpg" alt="Game cover" class="w-100">
+                        <a href="#" class="d-block text-center">Call of Duty: World at War II</a>
+                        <p class="text-center my-0">Release date: 24.03.2019</p>
+                        <p class="text-center my-0">Platform: PC, PS4, XboxOne</p>
+                        <p class="text-center my-0">Price at release: 59.99$</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 videoGamesListItem mb-5">
+                        <img src="images/game-covers/devil-may-cry-5.jpg" alt="Game cover" class="w-100">
+                        <a href="#" class="d-block text-center">Devil May Cry 5</a>
+                        <p class="text-center my-0">Release date: 20.02.2019</p>
+                        <p class="text-center my-0">Platform: PC, PS4</p>
+                        <p class="text-center my-0">Price at release: 44.99$</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 videoGamesListItem mb-5">
+                        <img src="images/game-covers/far-cry-primal.jpg" alt="Game cover" class="w-100">
+                        <a href="#" class="d-block text-center">Far Cry Primal</a>
+                        <p class="text-center my-0">Release date: 23.02.2016</p>
+                        <p class="text-center my-0">Platform: PC</p>
+                        <p class="text-center my-0">Price at release: 59.99$</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 videoGamesListItem mb-5">
+                        <img src="images/game-covers/forza-horizon-4.jpg" alt="Game cover" class="w-100">
+                        <a href="#" class="d-block text-center">Forza Horizon 4</a>
+                        <p class="text-center my-0">Release date: 24.05.2018</p>
+                        <p class="text-center my-0">Platform: PC, PS4</p>
+                        <p class="text-center my-0">Price at release: 69.99$</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 videoGamesListItem mb-5">
+                        <img src="images/game-covers/halo-5.jpg" alt="Game cover" class="w-100">
+                        <a href="#" class="d-block text-center">Halo 5</a>
+                        <p class="text-center my-0">Release date:24.09.2015</p>
+                        <p class="text-center my-0">Platform: XboxOne</p>
+                        <p class="text-center my-0">Price at release:49.99$</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 videoGamesListItem mb-5">
+                        <img src="images/game-covers/life-is-strange-2.jpg" alt="Game cover" class="w-100">
+                        <a href="#" class="d-block text-center">Life is Strange 2</a>
+                        <p class="text-center my-0">Release date: 18.04.2019</p>
+                        <p class="text-center my-0">Platform:PC, PS4</p>
+                        <p class="text-center my-0">Price at release:29.99$</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 videoGamesListItem mb-5">
+                        <img src="images/game-covers/monster-hunter-world.jpg" alt="Game cover" class="w-100">
+                        <a href="#" class="d-block text-center">Monster Hunter World</a>
+                        <p class="text-center my-0">Release date: 19.06.2018</p>
+                        <p class="text-center my-0">Platform: PS4</p>
+                        <p class="text-center my-0">Price at release: 49.99$</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 videoGamesListItem mb-5">
+                        <img src="images/game-covers/sekiro.jpg" alt="Game cover" class="w-100">
+                        <a href="#" class="d-block text-center">Sekiro: Shadows Die Twice</a>
+                        <p class="text-center my-0">Release date: 27.11.2018</p>
+                        <p class="text-center my-0">Platform: PC, PS4</p>
+                        <p class="text-center my-0">Price at release:54.99$</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 videoGamesListItem mb-5">
+                        <img src="images/game-covers/world-war-z.jpg" alt="Game cover" class="w-100">
+                        <a href="#" class="d-block text-center">World War Z</a>
+                        <p class="text-center my-0">Release date: 15.03.2019</p>
+                        <p class="text-center my-0">Platform: PC, PS4, XboxOne</p>
+                        <p class="text-center my-0">Price at release: 34.99$</p>
+                    </div>
+                </div>
+                <div class="row px-2 mx-0">
+                    <div class="col-12 px-0 align-items-end">
+                        <ul class="pagination d-flex justify-content-center my-0">
+                            <li class="page-skip disabled"><a href="#!"><i class="material-icons">chevron_left</i></a>
+                            </li>
+                            <li class="active"><a href="#!">1</a></li>
+                            <li class="waves-effect"><a href="#!">2</a></li>
+                            <li class="waves-effect"><a href="#!">3</a></li>
+                            <li class="waves-effect"><a href="#!">4</a></li>
+                            <li class="waves-effect"><a href="#!">5</a></li>
+                            <li class="page-skip waves-effect"><a href="#!"><i
+                                        class="material-icons">chevron_right</i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" class="containter-fluid px-5 pt-4 pb-1">
+        <div id="footerContent" class="row pr-0">
+            <div class="col-6 col-sm-4 col-md-2 px-0 text-center text-sm-left footerContentLinks">
+                <div>
+                    <h5 class="text-uppercase mb-3">General</h5>
+                    <ul>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">RSS Feed</a></li>
+                        <li><a href="#">About us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 px-0 text-center text-sm-left footerContentLinks">
+                <div>
+                    <h5 class="text-uppercase mb-3">Socials</h5>
+                    <ul>
+                        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                        <li><a href="https://youtube.com" target="_blank">Youtube</a></li>
+                        <li><a href="https://twitch.tv" target="_blank">Twitch</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 px-0 text-center text-sm-left footerContentLinks">
+                <div>
+                    <h5 class="text-uppercase mb-3">Legal</h5>
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-sm-5 col-md-2 px-0 mt-sm-3 mt-md-0 text-center text-sm-left footerContentLinks">
+                <div>
+                    <h5 class="text-uppercase mb-3">Contact</h5>
+                    <ul>
+                        <li><a href="#">Email us</a></li>
+                        <li><a href="#">For Advertisers</a></li>
+                        <li><a href="#">Report a problem</a></li>
+                        <li><a href="#">Support | Forum</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="newsletter" class="col-sm-7 col-md-4 justify-content-center px-0 mt-4 mt-sm-3 mt-md-0">
+                <h5 class="text-uppercase text-center">Subscribe to our newsletter</h5>
+                <div class="row mx-auto">
+                    <form class="col s12">
+                        <div class="row mx-0">
+                            <div class="input-field col s12">
+                                <input id="newsletterEmail" type="email" autocomplete="off">
+                                <label for="newsletterEmail">Email</label>
+                            </div>
+                        </div>
+                        <button type="button"
+                            class="btn btn-primary d-block w-100 mx-auto mt-0 px-0 gc-button text-capitalize">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <p class="text-center my-0 pt-3">Copytight &copy; | Games Corner 2019. All rights reserved.</p>
+    </div>
+
+
+
+
+
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/f43654b422.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <script src="js/materialize.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <script src="js/nouislider.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

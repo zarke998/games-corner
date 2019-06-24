@@ -31,31 +31,39 @@ ul {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-#headerNav {
+.headerNav {
   background-color: #121212;
   border-bottom: 1px solid #D20000;
   position: relative;
 }
 
-#headerNav #logo a:hover {
+.headerNav #logo a:hover {
   text-decoration: none;
   color: #FFF;
 }
 
-#headerNav #logo a img {
+.headerNav #logo a img {
   height: 35px;
 }
 
-#headerNav #logo a h1 {
+.headerNav #logo a h1 {
   font-size: 26px;
 }
 
-#headerNav #navMenu li {
+.headerNav #navMenu li {
   font-size: 20px;
 }
 
-#headerNav #navMenu li a:hover {
+.headerNav #navMenu li a:hover {
   color: #de0000;
+}
+
+#headerNavBlue {
+  border-bottom: 1px solid #0E35B5;
+}
+
+#headerNavBlue #navMenu li a:hover {
+  color: #0056b3;
 }
 
 #headerIntro #slider {
@@ -260,19 +268,31 @@ ul {
   font-size: 18px;
 }
 
-#headerWallpaper {
+.headerWallpaper {
   height: 320px;
-  background-image: url("../images/header-wallpapers/battlefield.jpg");
-  background-size: cover;
-  background-position: center top;
   border-bottom: 1px solid #4D4D4D;
 }
 
-#news #search {
+.headerWallpaper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 0%;
+     object-position: 50% 0%;
+}
+
+#videoGamesWallpaper img {
+  -o-object-position: 50% 70%;
+     object-position: 50% 70%;
+}
+
+#news #search, #videoGames #search {
   position: relative;
 }
 
-#news #search i {
+#news #search i, #videoGames #search i {
   display: block;
   position: absolute;
   top: 12px;
@@ -280,7 +300,7 @@ ul {
   z-index: 1;
 }
 
-#news #searchInput {
+#news #searchInput, #videoGames #searchInput {
   border: none;
   padding: 20px 40px;
   border-radius: 0px;
@@ -290,78 +310,123 @@ ul {
   color: #FFF;
 }
 
-#news #searchInput::-webkit-input-placeholder {
+#news #searchInput::-webkit-input-placeholder, #videoGames #searchInput::-webkit-input-placeholder {
   color: #4D4D4D;
 }
 
-#news #searchInput:-ms-input-placeholder {
+#news #searchInput:-ms-input-placeholder, #videoGames #searchInput:-ms-input-placeholder {
   color: #4D4D4D;
 }
 
-#news #searchInput::-ms-input-placeholder {
+#news #searchInput::-ms-input-placeholder, #videoGames #searchInput::-ms-input-placeholder {
   color: #4D4D4D;
 }
 
-#news #searchInput::placeholder {
+#news #searchInput::placeholder, #videoGames #searchInput::placeholder {
   color: #4D4D4D;
 }
 
-#news #searchInput:focus {
+#news #searchInput:focus, #videoGames #searchInput:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(14, 53, 181, 0.2);
           box-shadow: 0 0 0 0.2rem rgba(14, 53, 181, 0.2);
   z-index: 0;
 }
 
-#news .pagination li.active {
+#news .pagination li.active, #videoGames .pagination li.active {
   background-color: #0E35B5;
 }
 
-#news .pagination li.page-skip a {
+#news .pagination li.page-skip a, #videoGames .pagination li.page-skip a {
   color: #999999;
 }
 
-#news .pagination li.disabled a {
+#news .pagination li.disabled a, #videoGames .pagination li.disabled a {
   color: #444444;
 }
 
-#news .pagination li a {
+#news .pagination li a, #videoGames .pagination li a {
   text-decoration: none;
 }
 
-#news #newsShowing span {
+#news #newsShowing span, #videoGames #newsShowing span {
   font-size: 24px;
 }
 
-#news #newsShowing input {
+#news #newsShowing input, #videoGames #newsShowing input {
   margin-bottom: 0px;
 }
 
-#news #newsShowing div ul li span {
+#news #newsShowing div ul li span, #videoGames #newsShowing div ul li span {
   color: #0E35B5;
 }
 
-#news #newsShowing div .caret {
+#news #newsShowing div .caret, #videoGames #newsShowing div .caret {
   fill: #FFF;
 }
 
-#newsContent div {
+#newsContent div, #videoGamesContent div {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 31%;
           flex: 0 0 31%;
   margin-top: 50px;
 }
 
-#newsContent div P {
+#newsContent div P, #videoGamesContent div P {
   margin-bottom: 0px;
   font-size: 16px;
 }
 
-#newsContent div img {
+#newsContent div img, #videoGamesContent div img {
   border: 1px solid #4D4D4D;
 }
 
-#newsContent div a {
+#newsContent div a, #videoGamesContent div a {
   font-size: 24px;
+}
+
+#videoGames #filterWrapper {
+  border-right: 1px solid rgba(77, 77, 77, 0.3);
+}
+
+#videoGames #filterWrapper .filterSection h3 {
+  font-size: 32px;
+}
+
+#videoGames #filterWrapper .filterSection ul {
+  border: none;
+}
+
+#videoGames #filterWrapper .filterSection ul li {
+  background: none;
+  border: none;
+  padding: 2px 0px;
+}
+
+#videoGames #filterWrapper .filterSection ul li p {
+  margin-bottom: 0px;
+}
+
+#videoGames #filterWrapper .filterSection ul li p label {
+  margin-bottom: 0px;
+}
+
+#videoGames #filterWrapper .filterSection ul li p label span {
+  padding-left: 27px;
+  color: #FFF;
+  font-size: 26px;
+}
+
+#videoGames #filterWrapper .filterSection ul li #noui-slider .noUi-connect {
+  background: #0056b3;
+}
+
+#videoGamesList .videoGamesListItem a {
+  font-size: 26px;
+}
+
+#videoGamesList .videoGamesListItem p {
+  font-size: 20px;
+  line-height: normal;
 }
 
 @media screen and (max-width: 1127px) {
@@ -411,6 +476,9 @@ ul {
   .contentSectionSide #youtubeLatestVideo iframe {
     height: 250px;
   }
+  #videoGames #filterWrapper {
+    border-right: none;
+  }
   #footerContent .footerContentLinks {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -458,6 +526,10 @@ ul {
   #headerIntro #slider .carousel-indicators {
     display: none;
   }
+  #videoGames #filterWrapper .filterSection:last-child ul li:last-child {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -497,6 +569,10 @@ ul {
   border-bottom: 1px solid white !important;
   -webkit-box-shadow: 0 1px 0 0 white !important;
           box-shadow: 0 1px 0 0 white !important;
+}
+
+.gc-nav-blue {
+  border-bottom: 1px solid #0E35B5;
 }
 
 .gc-table {

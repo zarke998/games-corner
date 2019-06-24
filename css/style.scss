@@ -5,7 +5,7 @@ $bodyBlack: #0C0C0C;
 $navLinkHoverRed: #de0000;
 $imageBorderGrey: #4D4D4D;
 $primaryBlue: #0E35B5;
-$linkHoverBlue: #2cc7ca;
+$frameLinkHoverBlue: #2cc7ca;
 $facebookBlue: #4167B2;
 $twitchPurple: #6848A4;
 $youtubeRed: #C51A1E;
@@ -14,6 +14,7 @@ $twitterBlue: #00ACED;
 $footerBlack: #090909;
 $pageSkipGrey: #999999;
 $paginationGrey: #444444;
+$linkHoverBlue: #0056b3;
 
 @font-face{
     src: url("../fonts/agency.woff");
@@ -38,8 +39,7 @@ ul{
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-
-#headerNav{
+.headerNav{
     background-color: $topNavBlack;
     border-bottom: 1px solid $topNavBorderRed;
     position: relative;
@@ -63,6 +63,17 @@ ul{
             font-size: 20px;
             a:hover{
                 color: $navLinkHoverRed;
+            }
+        }
+    }
+}
+#headerNavBlue{
+    border-bottom: 1px solid $primaryBlue;
+
+    #navMenu{
+        li{
+            a:hover{
+                color: $linkHoverBlue;
             }
         }
     }
@@ -295,14 +306,26 @@ ul{
 }
 
 // NEWS Page
-#headerWallpaper{
+.headerWallpaper{
     height: 320px;
-    background-image: url("../images/header-wallpapers/battlefield.jpg");
-    background-size: cover;
-    background-position: center top;
+    // background-image: url("../images/header-wallpapers/battlefield.jpg");
+    // background-size: cover;
+    // background-position: center top;
     border-bottom: 1px solid $imageBorderGrey;
+    img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 0%;
+    }
 }
-#news{
+#videoGamesWallpaper{
+    img{
+        object-position: 50% 70%;
+    }
+}
+#news, #videoGames{
     #search{
         position: relative;
         i{
@@ -388,6 +411,56 @@ ul{
         }
     }
 }
+// GAME LIST Page
+#videoGames{
+    #filterWrapper{
+        border-right: 1px solid rgba($imageBorderGrey,0.3);
+        .filterSection{
+            h3{
+                font-size: 32px;
+            }
+            ul{
+                border:none;
+                li{
+                    background: none;
+                    border:none;
+                    padding: 2px 0px;
+                    p{
+                        margin-bottom: 0px;
+                        label{
+                            margin-bottom: 0px;
+                            span{
+                                padding-left: 27px;
+                                color: #FFF;
+                                font-size: 26px;
+                            }
+                        }
+                        
+                    }
+                    #noui-slider{
+                        .noUi-connect{
+                            background: $linkHoverBlue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &List{
+        .videoGamesListItem{
+            a{
+                font-size: 26px;
+            }
+            p{
+                font-size: 20px;
+                line-height: normal
+            }
+        }
+    }
+    
+}
+
 
 // Media queries
 @media screen and (max-width: 1127px){
@@ -435,7 +508,6 @@ ul{
             }
         }
     }
-    
 }
 @media screen and (max-width: 991px){
     #news{
@@ -470,6 +542,11 @@ ul{
                     height: 250px;
                 }
             }
+        }
+    }
+    #videoGames{
+        #filterWrapper{
+            border-right: none;
         }
     }
     #footer{
@@ -524,6 +601,17 @@ ul{
             }
         }
     }
+    #videoGames{
+        #filterWrapper{
+            .filterSection:last-child{
+                ul{
+                    li:last-child{
+                        flex-basis: 100%;
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 375px){
     #headerNav{
@@ -574,6 +662,9 @@ ul{
   }
 
 // My custom classes
+.gc-nav-blue{
+    border-bottom: 1px solid $primaryBlue;
+}
 .gc-table{
     border: 1px solid $imageBorderGrey;
     thead{
@@ -643,7 +734,7 @@ ul{
         a{
             font-size: 18px;
             &:hover{
-                color: $linkHoverBlue;
+                color: $frameLinkHoverBlue;
                 text-decoration: none;
             }
         }
