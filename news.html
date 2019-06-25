@@ -6,17 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <meta name="description"
+        content="Most recent news from video game industry. Stay updated with latest news from games, hardware technology and e-sports scene.">
+    <meta name="keywords" content="news, gaming news, most recent, latest, hardware news, e-sports,">
+    <meta name="author" content="Andrej Zarkovski">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
-    <link rel="stylesheet" type="text/css" href="css/materialize.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Games Corner | News</title>
 </head>
 
 <body>
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content px-3">
+                <div class="modal-header d-flex align-items-center">
+                    <h5 class="modal-title d-block w-100 text-uppercase text-center" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="input-field my-2">
+                            <input id="username" type="text" autocomplete="off">
+                            <label for="username">Username</label>
+                        </div>
+                        <div class="input-field my-2">
+                            <input id="password" type="password" autocomplete="off">
+                            <label for="password">Password</label>
+                        </div>
+                        <p id="rememberMe">
+                            <label>
+                                <input type="checkbox" />
+                                <span>Remember me</span>
+                            </label>
+                        </p>
+                        <button type="button"
+                            class="btn btn-primary d-block w-100 py-0 gc-button text-capitalize">Login</button>
+                    </form>
+                    <p id="signUpRedirect" class="text-center mt-3 mb-0">Don't have an account? <a href="#">Sign up</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="headerNav container-fluid px-2 px-sm-4">
         <nav class="navbar navbar-expand-lg px-2">
             <div id="logo" class="mr-md-5 ml-md-0 mx-auto py-lg-0 py-1">
@@ -52,7 +92,8 @@
                         <a class="nav-link text-center" href="about.html">About us</a>
                     </li>
                     <li class="nav-item ml-lg-auto ml-4">
-                        <a class="nav-link text-center" href="#">Account <i class="fas fa-user ml-2"></i></a>
+                        <a class="nav-link text-center" href="#" data-toggle="modal" data-target="#loginModal">Account
+                            <i class="fas fa-user ml-2"></i></a>
                     </li>
                 </ul>
             </div>
@@ -72,7 +113,8 @@
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-lg-4 px-0 mb-4 mb-lg-0 offset-lg-1 order-1 order-lg-2 d-flex justify-content-center align-items-end">
+            <div
+                class="col-12 col-lg-4 px-0 mb-4 mb-lg-0 offset-lg-1 order-1 order-lg-2 d-flex justify-content-center align-items-end">
                 <ul class="pagination d-inline-block my-0">
                     <li class="page-skip disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
                     <li class="active"><a href="#!">1</a></li>
@@ -83,7 +125,8 @@
                     <li class="page-skip waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
                 </ul>
             </div>
-            <div id="newsShowing" class="gc-select col-12 col-sm-6 col-lg-4 px-0 mb-3 mb-sm-0 pl-2 order-2 order-sm-3 order-lg-3 d-flex justify-content-end align-items-end">
+            <div id="newsShowing"
+                class="gc-select col-12 col-sm-6 col-lg-4 px-0 mb-3 mb-sm-0 pl-2 order-2 order-sm-3 order-lg-3 d-flex justify-content-end align-items-end">
                 <span>News showing</span>
                 <div class="input-field my-0 d-sm-flex ml-3">
                     <select>
@@ -170,9 +213,9 @@
                 <div>
                     <h5 class="text-uppercase mb-3">General</h5>
                     <ul>
-                        <li><a href="#">Sitemap</a></li>
-                        <li><a href="#">RSS Feed</a></li>
-                        <li><a href="#">About us</a></li>
+                        <li><a href="sitemap.xml">Sitemap</a></li>
+                        <li><a href="rss.xml">RSS Feed</a></li>
+                        <li><a href="about.html">About us</a></li>
                     </ul>
                 </div>
             </div>
@@ -246,8 +289,8 @@
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
 
-    <script src="js/materialize.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 
 

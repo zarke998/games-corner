@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>News</title>
+  <link>https://zarke998.github.io/games-corner</link>
+  <description>Most recent news from video game industry.</description>
+  <item>
+    <title>Watch Dogs Legion leaks - Post-Brexit London, play as any character in the game world</title>
+    <link>https://zarke998.github.io/games-corner</link>
+    <description>News article</description>
+  </item>
+  <item>
+    <title>AMD Radeon Pro Vega II and Vega II Duo revealed - Up to 64GB HBM2 and 28 TFLOPS performance</title>
+    <link>https://zarke998.github.io/games-corner</link>
+    <description>News article</description>
+  </item>
+  <item>
+    <title>Google Stadia price, release date and games to be shown at 'Stadia Connect' event this week</title>
+    <link>https://zarke998.github.io/games-corner</link>
+    <description>News article</description>
+  </item>
+  <item>
+    <title>Ghostbusters: The Video Game system requirements cross the streams</title>
+    <link>https://zarke998.github.io/games-corner</link>
+    <description>News article</description>
+  </item>
+</channel>
+
+</rss>

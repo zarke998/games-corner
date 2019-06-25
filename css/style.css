@@ -31,6 +31,40 @@ ul {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+#loginModal .modal-content {
+  background-color: #121212;
+  border: 2px solid #444444;
+  border-radius: 0px;
+}
+
+#loginModal .modal-content .modal-header {
+  border-bottom: none;
+}
+
+#loginModal .modal-content .modal-header .modal-title {
+  font-size: 36px;
+}
+
+#loginModal .modal-content .modal-header .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-shadow: none;
+}
+
+#loginModal .modal-content .modal-header .close i {
+  font-size: 36px;
+  color: #4D4D4D;
+}
+
+#loginModal .modal-content .modal-body #rememberMe span {
+  font-size: 18px;
+}
+
+#loginModal .modal-content .modal-body #signUpRedirect {
+  font-size: 24px;
+}
+
 .headerNav {
   background-color: #121212;
   border-bottom: 1px solid #D20000;
@@ -123,16 +157,16 @@ ul {
   text-align: right;
 }
 
-.contentSectionSide .advertisement {
+.contentSectionSide .nzxt {
   border: 1px solid #4D4D4D;
   position: relative;
 }
 
-.contentSectionSide .advertisement img {
+.contentSectionSide .nzxt img {
   width: 100%;
 }
 
-.contentSectionSide .advertisement p {
+.contentSectionSide .nzxt p {
   position: absolute;
   top: 5px;
   left: 10px;
@@ -609,6 +643,11 @@ ul {
   border-bottom: 1px solid white !important;
   -webkit-box-shadow: 0 1px 0 0 white !important;
           box-shadow: 0 1px 0 0 white !important;
+}
+
+input[type="checkbox"]:checked + span:not(.lever):before {
+  border-bottom-color: #0056b3;
+  border-right-color: #0056b3;
 }
 
 .gc-nav-blue {

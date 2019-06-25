@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://zarke998.github.io/games-corner/index.html</loc>
+  <lastmod>2019-06-26</lastmod>
+  <priority>1.00</priority>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://zarke998.github.io/games-corner/news.html</loc>
+  <lastmod>2019-06-26</lastmod>
+  <priority>0.90</priority>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://zarke998.github.io/games-corner/game-list.html</loc>
+  <lastmod>2019-06-13</lastmod>
+  <priority>0.90</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://zarke998.github.io/games-corner/game-art.html</loc>
+  <lastmod>2019-05-18</lastmod>
+  <priority>0.70</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://zarke998.github.io/games-corner/about.html</loc>
+  <lastmod>2019-02-05</lastmod>
+  <priority>0.60</priority>
+  <changefreq>yearly</changefreq>
+</url>
+
+
+</urlset>

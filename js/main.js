@@ -20,6 +20,7 @@ $(document).ready(function(){
     $('.materialboxed').materialbox();
   });
 
+     
 // Init noui-slider
 var nonLinearStepSlider = document.getElementById('noui-slider');
 

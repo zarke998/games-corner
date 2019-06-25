@@ -6,18 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="description"
+        content="Who we are and why we decided to make this website. Contact main author (creator) of this website.">
+    <meta name="keywords" content="games corner, about, author, creator">
+    <meta name="author" content="Andrej Zarkovski">
 
-
-    <link rel="stylesheet" type="text/css" href="css/materialize.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="css/nouislider.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Games Corner | News</title>
+    <title>Games Corner | About</title>
 </head>
 
 <body>
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content px-3">
+                <div class="modal-header d-flex align-items-center">
+                    <h5 class="modal-title d-block w-100 text-uppercase text-center" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="input-field my-2">
+                            <input id="username" type="text" autocomplete="off">
+                            <label for="username">Username</label>
+                        </div>
+                        <div class="input-field my-2">
+                            <input id="password" type="password" autocomplete="off">
+                            <label for="password">Password</label>
+                        </div>
+                        <p id="rememberMe">
+                            <label>
+                                <input type="checkbox" />
+                                <span>Remember me</span>
+                            </label>
+                        </p>
+                        <button type="button"
+                            class="btn btn-primary d-block w-100 py-0 gc-button text-capitalize">Login</button>
+                    </form>
+                    <p id="signUpRedirect" class="text-center mt-3 mb-0">Don't have an account? <a href="#">Sign up</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="headerNavBlue" class="headerNav container-fluid px-2 px-sm-4 gc-nav-blue">
         <nav class="navbar navbar-expand-lg px-2">
             <div id="logo" class="mr-md-5 ml-md-0 mx-auto py-lg-0 py-1">
@@ -53,7 +91,8 @@
                         <a class="nav-link text-center" href="#">About us</a>
                     </li>
                     <li class="nav-item ml-lg-auto ml-4">
-                        <a class="nav-link text-center" href="#">Account <i class="fas fa-user ml-2"></i></a>
+                        <a class="nav-link text-center" href="#" data-toggle="modal" data-target="#loginModal">Account
+                            <i class="fas fa-user ml-2"></i></a>
                     </li>
                 </ul>
             </div>
@@ -84,8 +123,8 @@
                     <p><span class="text-uppercase">Website owner - </span>Andrej Zarkovski</p>
                     <span class="d-block">Portfolio: <a href="http://zarke998.github.io/web-portfolio" target="_blank"
                             class="ml-2">zarke998.github.io/web-portfolio</a></span>
-                    <span class="d-block">GitHub: <a href="https://github.com/zarke998"
-                            class="ml-2" target="_blank">github.com/zarke998</a></span>
+                    <span class="d-block">GitHub: <a href="https://github.com/zarke998" class="ml-2"
+                            target="_blank">github.com/zarke998</a></span>
                     <span class="d-block">LinkedIn: <a href="https://www.linkedin.com/in/andrej-zarkovski-01b8a4188/"
                             class="ml-2" target="_blank">linkedin.com/in/andrej-zarkovski-01b8a4188</a></span>
                 </div>
@@ -124,9 +163,9 @@
                 <div>
                     <h5 class="text-uppercase mb-3">General</h5>
                     <ul>
-                        <li><a href="#">Sitemap</a></li>
-                        <li><a href="#">RSS Feed</a></li>
-                        <li><a href="#">About us</a></li>
+                        <li><a href="sitemap.xml">Sitemap</a></li>
+                        <li><a href="rss.xml">RSS Feed</a></li>
+                        <li><a href="about.html">About us</a></li>
                     </ul>
                 </div>
             </div>
@@ -200,8 +239,8 @@
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
 
-    <script src="js/materialize.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <script src="js/nouislider.min.js"></script>
 

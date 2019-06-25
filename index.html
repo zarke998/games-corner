@@ -6,14 +6,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="stylesheet" type="text/css" href="css/materialize.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <meta name="description" content="Welcome to the world of video games. Stay updated with daily gaming news and games that are currently trending, or see which games were most popular during this or previous years. Join our forum to share your experience with games and technology and learn something new.">
+  <meta name="keywords" content="games, video games, gaming, news, trending, popular">
+  <meta name="author" content="Andrej Zarkovski">
+  
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Games Corner | Home</title>
 </head>
 
 <body>
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content px-3">
+        <div class="modal-header d-flex align-items-center">
+          <h5 class="modal-title d-block w-100 text-uppercase text-center" id="exampleModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="#">
+            <div class="input-field my-2">
+              <input id="username" type="text" autocomplete="off">
+              <label for="username">Username</label>
+            </div>
+            <div class="input-field my-2">
+              <input id="password" type="password" autocomplete="off">
+              <label for="password">Password</label>
+            </div>
+            <p id="rememberMe">
+                <label>
+                    <input type="checkbox" />
+                    <span>Remember me</span>
+                </label>
+            </p>
+            <button type="button"
+              class="btn btn-primary d-block w-100 py-0 gc-button text-capitalize">Login</button>
+          </form>
+          <p id="signUpRedirect" class="text-center mt-3 mb-0">Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="headerNav container-fluid px-2 px-sm-4">
     <nav class="navbar navbar-expand-lg px-2">
       <div id="logo" class="mr-md-5 ml-md-0 mx-auto py-lg-0 py-1">
@@ -49,7 +88,8 @@
             <a class="nav-link text-center" href="about.html">About us</a>
           </li>
           <li class="nav-item ml-lg-auto ml-4">
-            <a class="nav-link text-center" href="#">Account <i class="fas fa-user ml-2"></i></a>
+            <a class="nav-link text-center" href="#" data-toggle="modal" data-target="#loginModal">Account <i
+                class="fas fa-user ml-2"></i></a>
           </li>
         </ul>
       </div>
@@ -244,8 +284,8 @@
               </tbody>
             </table>
           </div>
-          <div class="advertisement col-8 offset-2 col-sm-6 offset-sm-3 col-md-12 offset-md-0 px-0 unclickable">
-            <img src="images/ad-nzxt.jpg" alt="Advertisement">
+          <div class="nzxt col-8 offset-2 col-sm-6 offset-sm-3 col-md-12 offset-md-0 px-0 unclickable">
+            <img src="images/ad-nzxt.jpg" alt="nzxt">
             <p>advertisement</p>
           </div>
         </div>
@@ -508,66 +548,66 @@
   </div>
   </div>
   <div id="footer" class="containter-fluid px-5 pt-4 pb-1">
-      <div id="footerContent" class="row pr-0">
-        <div class="col-6 col-sm-4 col-md-2 px-0 text-center text-sm-left footerContentLinks">
-          <div>
-            <h5 class="text-uppercase mb-3">General</h5>
-            <ul>
-              <li><a href="#">Sitemap</a></li>
-              <li><a href="#">RSS Feed</a></li>
-              <li><a href="#">About us</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-2 px-0 text-center text-sm-left footerContentLinks">
-          <div>
-            <h5 class="text-uppercase mb-3">Socials</h5>
-            <ul>
-              <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-              <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-              <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-              <li><a href="https://youtube.com" target="_blank">Youtube</a></li>
-              <li><a href="https://twitch.tv" target="_blank">Twitch</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-2 px-0 text-center text-sm-left footerContentLinks">
-          <div>
-            <h5 class="text-uppercase mb-3">Legal</h5>
-            <ul>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Disclaimer</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-6 col-sm-5 col-md-2 px-0 mt-sm-3 mt-md-0 text-center text-sm-left footerContentLinks">
-          <div>
-            <h5 class="text-uppercase mb-3">Contact</h5>
-            <ul>
-              <li><a href="#">Email us</a></li>
-              <li><a href="#">For Advertisers</a></li>
-              <li><a href="#">Report a problem</a></li>
-              <li><a href="#">Support | Forum</a></li>
-            </ul>
-          </div>
-        </div>
-        <div id="newsletter" class="col-sm-7 col-md-4 justify-content-center px-0 mt-4 mt-sm-3 mt-md-0">
-          <h5 class="text-uppercase text-center">Subscribe to our newsletter</h5>
-          <div class="row mx-auto">
-            <form class="col s12">
-              <div class="row mx-0">
-                <div class="input-field col s12">
-                  <input id="newsletterEmail" type="email" autocomplete="off">
-                  <label for="newsletterEmail">Email</label>
-                </div>
-              </div>
-              <button type="button"
-                class="btn btn-primary d-block w-100 mx-auto mt-0 px-0 gc-button text-capitalize">Submit</button>
-            </form>
-          </div>
+    <div id="footerContent" class="row pr-0">
+      <div class="col-6 col-sm-4 col-md-2 px-0 text-center text-sm-left footerContentLinks">
+        <div>
+          <h5 class="text-uppercase mb-3">General</h5>
+          <ul>
+            <li><a href="sitemap.xml">Sitemap</a></li>
+            <li><a href="rss.xml">RSS Feed</a></li>
+            <li><a href="about.html">About us</a></li>
+          </ul>
         </div>
       </div>
-      <p class="text-center my-0 pt-3">Copytight &copy; | Games Corner 2019. All rights reserved.</p>
+      <div class="col-6 col-sm-4 col-md-2 px-0 text-center text-sm-left footerContentLinks">
+        <div>
+          <h5 class="text-uppercase mb-3">Socials</h5>
+          <ul>
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://youtube.com" target="_blank">Youtube</a></li>
+            <li><a href="https://twitch.tv" target="_blank">Twitch</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2 px-0 text-center text-sm-left footerContentLinks">
+        <div>
+          <h5 class="text-uppercase mb-3">Legal</h5>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-6 col-sm-5 col-md-2 px-0 mt-sm-3 mt-md-0 text-center text-sm-left footerContentLinks">
+        <div>
+          <h5 class="text-uppercase mb-3">Contact</h5>
+          <ul>
+            <li><a href="#">Email us</a></li>
+            <li><a href="#">For Advertisers</a></li>
+            <li><a href="#">Report a problem</a></li>
+            <li><a href="#">Support | Forum</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="newsletter" class="col-sm-7 col-md-4 justify-content-center px-0 mt-4 mt-sm-3 mt-md-0">
+        <h5 class="text-uppercase text-center">Subscribe to our newsletter</h5>
+        <div class="row mx-auto">
+          <form class="col s12">
+            <div class="row mx-0">
+              <div class="input-field col s12">
+                <input id="newsletterEmail" type="email" autocomplete="off">
+                <label for="newsletterEmail">Email</label>
+              </div>
+            </div>
+            <button type="button"
+              class="btn btn-primary d-block w-100 mx-auto mt-0 px-0 gc-button text-capitalize">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <p class="text-center my-0 pt-3">Copytight &copy; | Games Corner 2019. All rights reserved.</p>
   </div>
 
 
@@ -589,8 +629,8 @@
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
 
-  <script src="js/materialize.js"></script>
-  <script src="js/bootstrap.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 
 
 
