@@ -22,7 +22,7 @@ $linkHoverBlue: #0056b3;
 }
 body,a{
     font-family: "Agency FB";
-    color: #FFF;
+    color: #d6d6d6;
 }
 body{
     background-color: $bodyBlack;
@@ -170,45 +170,7 @@ ul{
             }
         }
 
-        #socials{
-
-            &Links{
-                font-size: 38px;
-                li{
-                    margin: 0px 8px;
-                    &:nth-child(1) i{
-                        color: $facebookBlue;
-                        &:hover{
-                            color: lighten($facebookBlue,10%);
-                        }
-                    }
-                    &:nth-child(2) i{
-                        color: $twitterBlue;
-                        &:hover{
-                            color: lighten($twitterBlue,10%);
-                        }
-                    }
-                    &:nth-child(3) i{
-                        color: $instagramPink;
-                        &:hover{
-                            color: lighten($instagramPink,10%);
-                        }
-                    }
-                    &:nth-child(4) i{
-                        color: $youtubeRed;
-                        &:hover{
-                            color: lighten($youtubeRed,10%);
-                        }
-                    }
-                    &:nth-child(5) i{
-                        color: $twitchPurple;
-                        &:hover{
-                            color: lighten($twitchPurple,10%);
-                        }
-                    }
-                }
-            }
-        }
+        
         #youtubeLatestVideo{
             iframe{
                 width: 100%;
@@ -268,15 +230,7 @@ ul{
                 border: 1px solid $imageBorderGrey;
             }
         }
-        #twitchChannel{
-            .frameLinkOverlay{
-                a{
-                    &:hover{
-                        color: $twitchPurple;
-                    }
-                }
-            }
-        }
+
     }
 }
 #footer{
@@ -303,6 +257,56 @@ ul{
         font-size: 18px;
     }
     
+}
+
+
+#twitchChannel{
+    .frameLinkOverlay{
+        a{
+            &:hover{
+                color: $twitchPurple;
+            }
+        }
+    }
+}
+#socials{
+
+    &Links{
+        font-size: 38px;
+        li{
+            margin: 0px 8px;
+            &:nth-child(1) i{
+                color: $facebookBlue;
+                &:hover{
+                    color: lighten($facebookBlue,10%);
+                }
+            }
+            &:nth-child(2) i{
+                color: $twitterBlue;
+                &:hover{
+                    color: lighten($twitterBlue,10%);
+                }
+            }
+            &:nth-child(3) i{
+                color: $instagramPink;
+                &:hover{
+                    color: lighten($instagramPink,10%);
+                }
+            }
+            &:nth-child(4) i{
+                color: $youtubeRed;
+                &:hover{
+                    color: lighten($youtubeRed,10%);
+                }
+            }
+            &:nth-child(5) i{
+                color: $twitchPurple;
+                &:hover{
+                    color: lighten($twitchPurple,10%);
+                }
+            }
+        }
+    }
 }
 
 
@@ -461,6 +465,27 @@ ul{
     }
 }
 
+// ABOUT Page
+#aboutWallpaper{
+    img{
+        object-position: 50% 40%;
+    }
+}
+#about{
+    &Text{
+        p,span{
+            font-size: 24px;
+            line-height: normal;
+        }
+        P:nth-child(2){
+            font-size: 28px;
+        }        
+        span{
+            font-size: 28px;
+        }
+
+    }
+}
 // Media queries
 @media screen and (max-width: 1127px){
     #headerIntro{
@@ -621,6 +646,21 @@ ul{
             }
         }
     }
+    #about{
+        &Text{
+            p:nth-child(2){
+                text-align: center;
+            }
+            span{
+                display: block;
+                text-align: center;
+                a{
+                    display: block;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 375px){
     #headerNav{
@@ -637,7 +677,7 @@ ul{
             }
         }
         &Side{
-            #buildYourPc, #twitchChannel{
+            #buildYourPc, #twitchChannelWrapper{
                 flex: 0 0 100%;
                 max-width: 100%;
                 margin-left: 0px;
@@ -648,6 +688,11 @@ ul{
                 }
             }
         }
+    }
+    #twitchChannelWrapper{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-left: 0px;
     }
 }
 // Materialize input field colors
