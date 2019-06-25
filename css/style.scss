@@ -39,6 +39,7 @@ ul{
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
 .headerNav{
     background-color: $topNavBlack;
     border-bottom: 1px solid $topNavBorderRed;
@@ -96,7 +97,6 @@ ul{
 
 }
 .contentSection{
-
     &Main{
         h2{
             font-size: 28px;
@@ -305,7 +305,7 @@ ul{
     
 }
 
-// NEWS Page
+
 .headerWallpaper{
     height: 320px;
     // background-image: url("../images/header-wallpapers/battlefield.jpg");
@@ -320,11 +320,8 @@ ul{
         object-position: 50% 0%;
     }
 }
-#videoGamesWallpaper{
-    img{
-        object-position: 50% 70%;
-    }
-}
+
+// NEWS Page
 #news, #videoGames{
     #search{
         position: relative;
@@ -373,27 +370,6 @@ ul{
             }
         }
     }
-    #newsShowing{
-        span{
-            font-size: 24px;
-            
-        }
-        input{
-            margin-bottom: 0px;
-        }
-        div{
-            ul{
-                li{
-                    span{
-                        color: $primaryBlue;
-                    }
-                }
-            }
-            .caret{
-                fill: #FFF;
-            }
-        }
-    }
     &Content{
         div{
             flex:0 0 31%;
@@ -412,6 +388,11 @@ ul{
     }
 }
 // GAME LIST Page
+#videoGamesWallpaper{
+    img{
+        object-position: 50% 70%;
+    }
+}
 #videoGames{
     #filterWrapper{
         border-right: 1px solid rgba($imageBorderGrey,0.3);
@@ -461,6 +442,24 @@ ul{
     
 }
 
+// GAME ART Page
+#gameArtWallpaper{
+    img{
+        object-position: 50% 70%;
+    }
+}
+#gameArt{
+    &List{
+        .gameArtListItem{
+            img{
+                border: 1px solid $imageBorderGrey;
+            }
+        }
+    }
+    #spinner{
+        border-color: $primaryBlue;
+    }
+}
 
 // Media queries
 @media screen and (max-width: 1127px){
@@ -566,11 +565,11 @@ ul{
             }
             
         }
-    #headerWallpaper{
-        height: 250px;
-    }
+    // .headerWallpaper{
+    //     height: 250px;
+    // }
     #news{
-        #newsShowing{
+        .gc-select{
             justify-content: start !important;
             div{
                 flex: 1;
@@ -579,6 +578,16 @@ ul{
         &Content{
             div{
                 flex: 0 0 98%;
+            }
+        }
+    }
+    #videoGames{
+        &Nav{
+            .gc-select{
+                justify-content: start;
+                div{
+                    flex: 1;
+                }
             }
         }
     }
@@ -716,6 +725,28 @@ ul{
     &:hover{
         background-color: lighten($primaryBlue, 10%);
         border-color: lighten($primaryBlue,10%);
+    }
+}
+.gc-select{
+    span{
+        font-size: 24px;
+        
+    }
+    input{
+        margin-bottom: 0px !important;
+    }
+    div{
+        ul{
+            li{
+                span{
+                    font-size: 22px;
+                    color: $primaryBlue;
+                }
+            }
+        }
+        .caret{
+            fill: #FFF;
+        }
     }
 }
 .frameLink{

@@ -12,12 +12,13 @@
     <link rel="stylesheet" type="text/css" href="css/materialize.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 
+    <link rel="stylesheet" type="text/css" href="css/nouislider.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Games Corner | News</title>
 </head>
 
 <body>
-    <div class="headerNav container-fluid px-2 px-sm-4">
+    <div id="headerNavBlue" class="headerNav container-fluid px-2 px-sm-4 gc-nav-blue">
         <nav class="navbar navbar-expand-lg px-2">
             <div id="logo" class="mr-md-5 ml-md-0 mx-auto py-lg-0 py-1">
                 <a href="index.html" class="d-flex align-items-center">
@@ -58,112 +59,101 @@
             </div>
         </nav>
     </div>
-    <div class="headerWallpaper container-fluid px-0">
-        <img src="images/header-wallpapers/battlefield.jpg" class="w-100" alt="Wallpaper">
+    <div id="gameArtWallpaper" class="headerWallpaper container-fluid px-0">
+        <img src="images/header-wallpapers/demon.jpg" class="w-100" alt="Wallpaper">
     </div>
-    <div id="news" class="container-fluid px-4 py-5">
-        <h2 class="text-uppercase text-center mb-5">News</h2>
-        <div class="row px-2 mx-0">
-            <div class="col-12 col-sm-6 col-lg-3 px-0 order-3 order-sm-2 order-lg-1 d-flex align-items-end">
-                <form class="w-100">
-                    <div id="search" class="input-group">
-                        <i class="fas fa-search"></i>
-                        <input type="search" class="form-control" id="searchInput" placeholder="search by title or tag">
-                    </div>
-                </form>
-            </div>
-            <div class="col-12 col-lg-4 px-0 mb-4 mb-lg-0 offset-lg-1 order-1 order-lg-2 d-flex justify-content-center align-items-end">
-                <ul class="pagination d-inline-block my-0">
-                    <li class="page-skip disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-                    <li class="active"><a href="#!">1</a></li>
-                    <li class="waves-effect"><a href="#!">2</a></li>
-                    <li class="waves-effect"><a href="#!">3</a></li>
-                    <li class="waves-effect"><a href="#!">4</a></li>
-                    <li class="waves-effect"><a href="#!">5</a></li>
-                    <li class="page-skip waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-                </ul>
-            </div>
-            <div id="newsShowing" class="gc-select col-12 col-sm-6 col-lg-4 px-0 mb-3 mb-sm-0 pl-2 order-2 order-sm-3 order-lg-3 d-flex justify-content-end align-items-end">
-                <span>News showing</span>
-                <div class="input-field my-0 d-sm-flex ml-3">
+
+    <div id="gameArt" class="containter-fluid py-4 px-4">
+        <h2 class="text-uppercase text-center mb-5">Game art</h2>
+        <div class="row px-1">
+            <div class="gc-select col-12 col-md-6 col-lg-3 d-flex align-items-end">
+                <span class="text-center">Choose category</span>
+                <div class="input-field my-0 ml-3 flex-grow-1">
                     <select>
-                        <option value="9">9</option>
-                        <option value="12">12</option>
-                        <option value="15">15</option>
+                        <option value="all">All</option>
+                        <option value="wallpapers">Wallpapers</option>
+                        <option value="cosplay">Cosplay</option>
+                        <option value="drawings">Drawings</option>
                     </select>
                 </div>
             </div>
         </div>
-        <div id="newsContent" class="d-flex flex-wrap justify-content-between px-2 mb-5">
-            <div>
-                <p class="text-right">24.06.2019</p>
-                <img src="images/news-covers/watch-dogs-3.jpg" alt="News cover image" class="w-100">
-                <a href="#" class="d-block text-center">Watch Dogs Legion leaks - Post-Brexit London, play as any
-                    character in the game world</a>
+        <div id="gameArtList" class="row px-1 my-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gameArtListItem mb-4">
+                <img src="images/game-art/master-chief.jpg" alt="Game art picture" class="materialboxed responsive-img">
             </div>
-            <div>
-                <p class="text-right">23.06.2019</p>
-                <img src="images/news-covers/radeon-vega.jpg" alt="News cover image" class="w-100">
-                <a href="#" class="d-block text-center">AMD Radeon Pro Vega II and Vega II Duo revealed - Up to 64GB
-                    HBM2 and 28 TFLOPS performance</a>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gameArtListItem mb-4">
+                <img src="images/game-art/colorful.jpg" alt="Game art picture" class="materialboxed responsive-img">
             </div>
-            <div>
-                <p class="text-right">21.06.2019</p>
-                <img src="images/news-covers/google-stadia.jpg" alt="News cover image" class="w-100">
-                <a href="#" class="d-block text-center">Google Stadia price, release date and games to be shown at
-                    'Stadia Connect' event this week</a>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gameArtListItem mb-4">
+                <img src="images/game-art/fallout.jpg" alt="Game art picture" class="materialboxed responsive-img">
             </div>
-            <div>
-                <p class="text-right">21.06.2019</p>
-                <img src="images/news-covers/ghostbusters.jpg" alt="News cover image" class="w-100">
-                <a href="#" class="d-block text-center">Ghostbusters: The Video Game system requirements cross the
-                    streams</a>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gameArtListItem mb-4">
+                <img src="images/game-art/spaceship.jpg" alt="Game art picture" class="materialboxed responsive-img">
             </div>
-            <div>
-                <p class="text-right">21.06.2019</p>
-                <img src="images/news-covers/cyberpunk-2077.jpg" alt="News cover image" class="w-100">
-                <a href="#" class="d-block text-center">Cyberpunk 2077 plans to have The Witcher 3-style large-scale
-                    expansions after launch</a>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gameArtListItem mb-4">
+                <img src="images/game-art/titanfall-2.jpg" alt="Game art picture" class="materialboxed responsive-img">
             </div>
-            <div>
-                <p class="text-right">20.06.2019</p>
-                <img src="images/news-covers/pci-6.0.jpg" alt="News cover image" class="w-100">
-                <a href="#" class="d-block text-center">PCI Express 6.0 announced - Offers 8x the bandwidth of today's
-                    PCI 3.0</a>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gameArtListItem mb-4">
+                <img src="images/game-art/battlefield.jpg" alt="Game art picture" class="materialboxed responsive-img">
             </div>
-            <div>
-                <p class="text-right">19.06.2019</p>
-                <img src="images/news-covers/e3-2019-most.jpg" alt="News cover image" class="w-100">
-                <a href="#" class="d-block text-center">E3 2019's most popular and most hated game trailers and
-                    announcements revealed</a>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gameArtListItem mb-4">
+                <img src="images/game-art/sekiro.jpg" alt="Game art picture" class="materialboxed responsive-img">
             </div>
-            <div>
-                <p class="text-right">19.06.2019</p>
-                <img src="images/news-covers/dota2.jpg" alt="News cover image" class="w-100">
-                <a href="#" class="d-block text-center">Valve is developing a standalone version of the mega-popular
-                    Dota Auto Chess mode</a>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gameArtListItem mb-4">
+                <img src="images/game-art/cs-go.jpg" alt="Game art picture" class="materialboxed responsive-img">
             </div>
-            <div>
-                <p class="text-right">19.06.2019</p>
-                <img src="images/news-covers/got-game.jpg" alt="News cover image" class="w-100">
-                <a href="#" class="d-block text-center">Game of Thrones creator George R.R. Martin confirms work on a
-                    videogame with Japanese dev</a>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gameArtListItem mb-4">
+                <img src="images/game-art/prince-of-persia.jpg" alt="Game art picture"
+                    class="materialboxed responsive-img">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gameArtListItem mb-4">
+                <img src="images/game-art/assassins-creed.jpg" alt="Game art picture"
+                    class="materialboxed responsive-img">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gameArtListItem mb-4">
+                <img src="images/game-art/rise-of-the-tomb-raider.jpg" alt="Game art picture"
+                    class="materialboxed responsive-img">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gameArtListItem mb-4">
+                <img src="images/game-art/assassins-creed-cosplay.jpg" alt="Game art picture"
+                    class="materialboxed responsive-img">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gameArtListItem mb-4">
+                <img src="images/game-art/master-chief-cosplay.jpg" alt="Game art picture"
+                    class="materialboxed responsive-img">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gameArtListItem mb-4">
+                <img src="images/game-art/katarina-cosplay.jpg" alt="Game art picture"
+                    class="materialboxed responsive-img">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gameArtListItem mb-4">
+                <img src="images/game-art/zed.jpg" alt="Game art picture" class="materialboxed responsive-img">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gameArtListItem mb-4">
+                <img src="images/game-art/rainbow-six.jpg" alt="Game art picture" class="materialboxed responsive-img">
             </div>
         </div>
-        <div class="row px-2 mx-0">
-            <div class="col-12 px-0 align-items-end">
-                <ul class="pagination d-flex justify-content-center my-0">
-                    <li class="page-skip disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-                    <li class="active"><a href="#!">1</a></li>
-                    <li class="waves-effect"><a href="#!">2</a></li>
-                    <li class="waves-effect"><a href="#!">3</a></li>
-                    <li class="waves-effect"><a href="#!">4</a></li>
-                    <li class="waves-effect"><a href="#!">5</a></li>
-                    <li class="page-skip waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-                </ul>
+        <div class="row px-1">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="preloader-wrapper active">
+                    <div id="spinner" class="spinner-layer">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    </div>
+
     <div id="footer" class="containter-fluid px-5 pt-4 pb-1">
         <div id="footerContent" class="row pr-0">
             <div class="col-6 col-sm-4 col-md-2 px-0 text-center text-sm-left footerContentLinks">
@@ -249,7 +239,7 @@
     <script src="js/materialize.js"></script>
     <script src="js/bootstrap.js"></script>
 
-
+    <script src="js/nouislider.min.js"></script>
 
     <script src="js/main.js"></script>
 

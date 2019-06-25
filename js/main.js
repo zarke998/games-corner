@@ -15,6 +15,10 @@ function autoplay() {
 $(document).ready(function(){
   $('select').formSelect();
 });
+// Init mareliaboxed (materialize)
+$(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
 
 // Init noui-slider
 var nonLinearStepSlider = document.getElementById('noui-slider');

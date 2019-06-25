@@ -283,11 +283,6 @@ ul {
      object-position: 50% 0%;
 }
 
-#videoGamesWallpaper img {
-  -o-object-position: 50% 70%;
-     object-position: 50% 70%;
-}
-
 #news #search, #videoGames #search {
   position: relative;
 }
@@ -348,22 +343,6 @@ ul {
   text-decoration: none;
 }
 
-#news #newsShowing span, #videoGames #newsShowing span {
-  font-size: 24px;
-}
-
-#news #newsShowing input, #videoGames #newsShowing input {
-  margin-bottom: 0px;
-}
-
-#news #newsShowing div ul li span, #videoGames #newsShowing div ul li span {
-  color: #0E35B5;
-}
-
-#news #newsShowing div .caret, #videoGames #newsShowing div .caret {
-  fill: #FFF;
-}
-
 #newsContent div, #videoGamesContent div {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 31%;
@@ -382,6 +361,11 @@ ul {
 
 #newsContent div a, #videoGamesContent div a {
   font-size: 24px;
+}
+
+#videoGamesWallpaper img {
+  -o-object-position: 50% 70%;
+     object-position: 50% 70%;
 }
 
 #videoGames #filterWrapper {
@@ -427,6 +411,19 @@ ul {
 #videoGamesList .videoGamesListItem p {
   font-size: 20px;
   line-height: normal;
+}
+
+#gameArtWallpaper img {
+  -o-object-position: 50% 70%;
+     object-position: 50% 70%;
+}
+
+#gameArtList .gameArtListItem img {
+  border: 1px solid #4D4D4D;
+}
+
+#gameArt #spinner {
+  border-color: #0E35B5;
 }
 
 @media screen and (max-width: 1127px) {
@@ -494,15 +491,12 @@ ul {
 }
 
 @media screen and (max-width: 575px) {
-  #headerWallpaper {
-    height: 250px;
-  }
-  #news #newsShowing {
+  #news .gc-select {
     -webkit-box-pack: start !important;
         -ms-flex-pack: start !important;
             justify-content: start !important;
   }
-  #news #newsShowing div {
+  #news .gc-select div {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -511,6 +505,16 @@ ul {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 98%;
             flex: 0 0 98%;
+  }
+  #videoGamesNav .gc-select {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  #videoGamesNav .gc-select div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
   #footerContent .footerContentLinks {
     -webkit-box-align: start;
@@ -629,6 +633,23 @@ ul {
 .gc-button:hover {
   background-color: #1243e4;
   border-color: #1243e4;
+}
+
+.gc-select span {
+  font-size: 24px;
+}
+
+.gc-select input {
+  margin-bottom: 0px !important;
+}
+
+.gc-select div ul li span {
+  font-size: 22px;
+  color: #0E35B5;
+}
+
+.gc-select div .caret {
+  fill: #FFF;
 }
 
 .frameLink {
