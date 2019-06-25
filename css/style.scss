@@ -195,16 +195,8 @@ ul{
 
         .nzxt{
             border: 1px solid $imageBorderGrey;
-            position: relative;
             img{
                 width: 100%;
-            }
-            p{
-                position: absolute;
-                top: 5px;
-                left: 10px;
-                font-size: 18px;
-                opacity: 0.2;
             }
         }
 
