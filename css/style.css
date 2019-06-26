@@ -88,15 +88,16 @@ ul {
   font-size: 20px;
 }
 
-.headerNav #navMenu li a:hover {
+.headerNav #navMenu li span:hover, .headerNav #navMenu li a:hover {
   color: #de0000;
+  cursor: pointer;
 }
 
 #headerNavBlue {
   border-bottom: 1px solid #0E35B5;
 }
 
-#headerNavBlue #navMenu li a:hover {
+#headerNavBlue #navMenu li span:hover, #headerNavBlue #navMenu li a:hover {
   color: #0056b3;
 }
 
@@ -136,8 +137,14 @@ ul {
   line-height: 24px;
 }
 
-.contentSectionMain .homeNewsItemText a {
+.contentSectionMain .homeNewsItemText span {
   font-size: 24px;
+}
+
+.contentSectionMain .homeNewsItemText span:hover {
+  color: #0056b3;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .contentSectionSide #upcomingGames .gc-table thead tr th:first-child {
@@ -229,12 +236,14 @@ ul {
   font-size: 24px;
 }
 
-#footerContent div ul li a {
+#footerContent div ul li span, #footerContent div ul li a {
   font-size: 18px;
 }
 
-#footerContent div ul li a:hover {
+#footerContent div ul li span:hover, #footerContent div ul li a:hover {
+  color: #0056b3;
   text-decoration: none;
+  cursor: pointer;
 }
 
 #footer p {
@@ -384,8 +393,14 @@ ul {
   border: 1px solid #4D4D4D;
 }
 
-#newsContent div a, #videoGamesContent div a {
+#newsContent div span, #videoGamesContent div span {
   font-size: 24px;
+}
+
+#newsContent div span:hover, #videoGamesContent div span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #0056b3;
 }
 
 #videoGamesWallpaper img {
@@ -429,8 +444,14 @@ ul {
   background: #0056b3;
 }
 
-#videoGamesList .videoGamesListItem a {
+#videoGamesList .videoGamesListItem span {
   font-size: 26px;
+}
+
+#videoGamesList .videoGamesListItem span:hover {
+  text-decoration: underline;
+  color: #0056b3;
+  cursor: pointer;
 }
 
 #videoGamesList .videoGamesListItem p {
@@ -454,6 +475,10 @@ ul {
 #aboutWallpaper img {
   -o-object-position: 50% 40%;
      object-position: 50% 40%;
+}
+
+#aboutText img {
+  border: 1px solid #4D4D4D;
 }
 
 #aboutText p, #aboutText span {
@@ -614,6 +639,14 @@ ul {
     max-width: 100%;
     margin-left: 0px;
   }
+  #aboutText #profilePicWrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 70%;
+            flex: 0 0 70%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .input-field input {
@@ -735,12 +768,13 @@ input[type="checkbox"]:checked + span:not(.lever):before {
   background: rgba(0, 0, 0, 0.8);
 }
 
-.frameLinkOverlay a {
+.frameLinkOverlay span {
   font-size: 18px;
 }
 
-.frameLinkOverlay a:hover {
+.frameLinkOverlay span:hover {
   color: #2cc7ca;
   text-decoration: none;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

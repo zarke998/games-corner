@@ -100,8 +100,9 @@ ul{
     #navMenu{
         li{
             font-size: 20px;
-            a:hover{
+            span:hover, a:hover{
                 color: $navLinkHoverRed;
+                cursor: pointer;
             }
         }
     }
@@ -111,7 +112,7 @@ ul{
 
     #navMenu{
         li{
-            a:hover{
+            span:hover,a:hover{
                 color: $linkHoverBlue;
             }
         }
@@ -141,7 +142,6 @@ ul{
         }
 
         .homeNewsItem{
-            
             // height: 175px;
             &Image{
                 height: 175px;
@@ -156,8 +156,13 @@ ul{
             &Text{
                 font-size: 18px;
                 line-height: 24px;
-                a{
+                span{
                     font-size: 24px;
+                    &:hover{
+                        color: $linkHoverBlue;
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -273,10 +278,12 @@ ul{
             }
             ul{
                 li{
-                    a{
+                    span,a{
                         font-size: 18px;
                         &:hover{
+                            color: $linkHoverBlue;
                             text-decoration: none;
+                            cursor: pointer;
                         }
                     }
                 }
@@ -415,8 +422,14 @@ ul{
             img{
                 border: 1px solid $imageBorderGrey;
             }
-            a{
+            span{
+                
                 font-size: 24px;
+                &:hover{
+                    text-decoration: underline;
+                    cursor: pointer;
+                    color: $linkHoverBlue;
+                }
             }
         }
     }
@@ -464,8 +477,13 @@ ul{
 
     &List{
         .videoGamesListItem{
-            a{
+            span{
                 font-size: 26px;
+                &:hover{
+                    text-decoration: underline;
+                    color: $linkHoverBlue;
+                    cursor: pointer;
+                }
             }
             p{
                 font-size: 20px;
@@ -502,7 +520,26 @@ ul{
     }
 }
 #about{
+    // VERSION 1
+    // &Text{
+    //     p,span{
+    //         font-size: 24px;
+    //         line-height: normal;
+    //     }
+    //     P:nth-child(2){
+    //         font-size: 28px;
+    //     }        
+    //     span{
+    //         font-size: 28px;
+    //     }
+
+    // }
+
+    // VERSION 2
     &Text{
+        img{
+            border: 1px solid $imageBorderGrey;
+        }
         p,span{
             font-size: 24px;
             line-height: normal;
@@ -513,7 +550,7 @@ ul{
         span{
             font-size: 28px;
         }
-
+    
     }
 }
 // Media queries
@@ -724,6 +761,16 @@ ul{
         max-width: 100%;
         margin-left: 0px;
     }
+    #about{
+        &Text{
+            #profilePicWrapper{
+                flex: 0 0 70%;
+                max-width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
 }
 // Materialize input field colors
 .input-field input{
@@ -842,11 +889,12 @@ input[type="checkbox"]:checked + span:not(.lever):before{
         left: 0px;
         width: 100%;
         background: rgba(#000,0.8);
-        a{
+        span{
             font-size: 18px;
             &:hover{
                 color: $frameLinkHoverBlue;
                 text-decoration: none;
+                cursor: pointer;
             }
         }
     }
