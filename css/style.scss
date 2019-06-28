@@ -72,6 +72,13 @@ ul{
 
             #signUpRedirect{
                 font-size: 24px;
+                span{
+                    &:hover{
+                        color:$linkHoverBlue;
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
             }
         }
     }
@@ -299,9 +306,12 @@ ul{
 
 #twitchChannel{
     .frameLinkOverlay{
-        a{
+        span{
+            font-size: 18px;
             &:hover{
+                cursor: pointer;
                 color: $twitchPurple;
+                text-decoration: underline;
             }
         }
     }

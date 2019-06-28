@@ -65,6 +65,12 @@ ul {
   font-size: 24px;
 }
 
+#loginModal .modal-content .modal-body #signUpRedirect span:hover {
+  color: #0056b3;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .headerNav {
   background-color: #121212;
   border-bottom: 1px solid #D20000;
@@ -250,8 +256,14 @@ ul {
   font-size: 18px;
 }
 
-#twitchChannel .frameLinkOverlay a:hover {
+#twitchChannel .frameLinkOverlay span {
+  font-size: 18px;
+}
+
+#twitchChannel .frameLinkOverlay span:hover {
+  cursor: pointer;
   color: #6848A4;
+  text-decoration: underline;
 }
 
 #socialsLinks {
