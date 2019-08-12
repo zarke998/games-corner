@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <meta name="description" content="Welcome to the world of video games. Stay updated with daily gaming news and games that are currently trending, or see which games were most popular during this or previous years. Join our forum to share your experience with games and technology and learn something new.">
+  <meta name="description"
+    content="Welcome to the world of video games. Stay updated with daily gaming news and games that are currently trending, or see which games were most popular during this or previous years. Join our forum to share your experience with games and technology and learn something new.">
   <meta name="keywords" content="games, video games, gaming, news, trending, popular">
   <meta name="author" content="Andrej Zarkovski">
-  
+
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -40,13 +41,12 @@
               <label for="password">Password</label>
             </div>
             <p id="rememberMe">
-                <label>
-                    <input type="checkbox" />
-                    <span>Remember me</span>
-                </label>
+              <label>
+                <input type="checkbox" />
+                <span>Remember me</span>
+              </label>
             </p>
-            <button type="button"
-              class="btn btn-primary d-block w-100 py-0 gc-button text-capitalize">Login</button>
+            <button type="button" class="btn btn-primary d-block w-100 py-0 gc-button text-capitalize">Login</button>
           </form>
           <p id="signUpRedirect" class="text-center mt-3 mb-0">Don't have an account? <span>Sign up</span></p>
         </div>
@@ -87,7 +87,16 @@
           <li class="nav-item mx-1">
             <a class="nav-link text-center" href="about.html">About</a>
           </li>
-          <li class="nav-item ml-lg-auto ml-4">
+          <li class="nav-item ml-lg-auto">
+            <div id="rgbSwitch" class="switch nav-link text-center">
+              <label>
+                <input type="checkbox">
+                <span class="lever"></span>
+                RGB
+              </label>
+            </div>
+          </li>
+          <li class="nav-item ml-4">
             <a class="nav-link text-center" href="#" data-toggle="modal" data-target="#loginModal">Account <i
                 class="fas fa-user ml-2"></i></a>
           </li>
@@ -95,6 +104,10 @@
       </div>
     </nav>
   </div>
+  <section class="seperator-wrapper">
+    <div class="seperator gradient">
+    </div>
+  </section>
   <div id="headerIntro" class="container-fluid px-0 py-0 px-sm-4 py-sm-4 mb-4">
     <div class="row mx-0 px-0 px-sm-2">
       <div class="col-lg-8 px-0">
@@ -546,6 +559,10 @@
     </div>
   </div>
   </div>
+  <section class="seperator-wrapper">
+    <div class="seperator gradient">
+    </div>
+  </section>
   <div id="footer" class="containter-fluid px-5 pt-4 pb-1">
     <div id="footerContent" class="row pr-0">
       <div class="col-6 col-sm-4 col-md-2 px-0 text-center text-sm-left footerContentLinks">

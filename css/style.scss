@@ -26,6 +26,7 @@ body,a{
 }
 body{
     background-color: $bodyBlack;
+    overflow-x: hidden;
 }
 ul{
     list-style-type: none;
@@ -89,30 +90,42 @@ ul{
     background-color: $topNavBlack;
     border-bottom: 1px solid $topNavBorderRed;
     position: relative;
-    #logo{
-        a{
-            &:hover{
-                text-decoration: none;
-                color: #FFF;
-            }
-            img{
-                height: 35px;
-            }
-            h1{
-                font-size: 26px;
-            }
-        }
-    }
 
-    #navMenu{
-        li{
-            font-size: 20px;
-            span:hover, a:hover{
-                color: $navLinkHoverRed;
-                cursor: pointer;
+    .navbar{
+        box-shadow: none;
+
+        #logo{
+            a{
+                &:hover{
+                    text-decoration: none;
+                    color: #FFF;
+                }
+                img{
+                    height: 35px;
+                }
+                h1{
+                    font-size: 26px;
+                }
+            }
+        }
+    
+        #navMenu{
+            li{
+                font-size: 20px;
+                span:hover, a:hover{
+                    color: $navLinkHoverRed;
+                    cursor: pointer;
+                }
+    
+                label{
+                    font-size: 20px;
+                    color: #d6d6d6;
+                    margin-bottom: 0px;
+                }
             }
         }
     }
+    
 }
 #headerNavBlue{
     border-bottom: 1px solid $primaryBlue;
@@ -801,10 +814,23 @@ ul{
     box-shadow: 0 1px 0 0 white !important;
 
   }
-//   checkbox
+//  checkbox
 input[type="checkbox"]:checked + span:not(.lever):before{
     border-bottom-color: $linkHoverBlue;
     border-right-color: $linkHoverBlue;
+}
+
+//  switch lever color
+#rgbSwitch label .lever{
+    background-color: lighten(#000, 15);
+}
+//  switch lever circle color (active)
+#rgbSwitch label input[type=checkbox]:checked+.lever:after{
+    background-color: $linkHoverBlue;
+}
+//  switch lever color (active)
+#rgbSwitch label input[type=checkbox]:checked+.lever{
+    background-color: darken($linkHoverBlue, 15);
 }
 
 // My custom classes
@@ -909,3 +935,46 @@ input[type="checkbox"]:checked + span:not(.lever):before{
         }
     }
 }
+
+// RGB border
+.seperator-wrapper {
+    display: none;
+    width: 100%;  
+    .seperator {
+      width: 3000px;
+      height: 2px;
+      animation: rotate 3s infinite linear;
+      -webkit-animation: rotate 3s infinite linear;
+    }
+    
+  }
+  
+  @-webkit-keyframes rotate {
+    from {
+      background-position: -3000px;
+    }
+    to { 
+      background-position: 0px;
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      background-position: -3000px;
+    }
+    to { 
+      background-position: 0px;
+    }
+  }
+  
+  .gradient {
+    background: rgb(48,255,144); /* Old browsers */
+  background: -moz-linear-gradient(left,  rgba(48,255,144,1) 0%, rgba(237,45,237,1) 25%, rgba(201,152,38,1) 50%, rgba(48,255,230,1) 75%, rgba(48,255,144,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(48,255,144,1)), color-stop(25%,rgba(237,45,237,1)), color-stop(50%,rgba(201,152,38,1)), color-stop(75%,rgba(48,255,230,1)), color-stop(100%,rgba(48,255,144,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(48,255,144,1) 0%,rgba(237,45,237,1) 25%,rgba(201,152,38,1) 50%,rgba(48,255,230,1) 75%,rgba(48,255,144,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(48,255,144,1) 0%,rgba(237,45,237,1) 25%,rgba(201,152,38,1) 50%,rgba(48,255,230,1) 75%,rgba(48,255,144,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(48,255,144,1) 0%,rgba(237,45,237,1) 25%,rgba(201,152,38,1) 50%,rgba(48,255,230,1) 75%,rgba(48,255,144,1) 100%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(48,255,144,1) 0%,rgba(237,45,237,1) 25%,rgba(201,152,38,1) 50%,rgba(48,255,230,1) 75%,rgba(48,255,144,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30ff90', endColorstr='#30ff90',GradientType=1 ); /* IE6-9 */
+  
+  }

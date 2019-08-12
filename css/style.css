@@ -10,6 +10,7 @@ body, a {
 
 body {
   background-color: #0C0C0C;
+  overflow-x: hidden;
 }
 
 ul {
@@ -77,26 +78,37 @@ ul {
   position: relative;
 }
 
-.headerNav #logo a:hover {
+.headerNav .navbar {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.headerNav .navbar #logo a:hover {
   text-decoration: none;
   color: #FFF;
 }
 
-.headerNav #logo a img {
+.headerNav .navbar #logo a img {
   height: 35px;
 }
 
-.headerNav #logo a h1 {
+.headerNav .navbar #logo a h1 {
   font-size: 26px;
 }
 
-.headerNav #navMenu li {
+.headerNav .navbar #navMenu li {
   font-size: 20px;
 }
 
-.headerNav #navMenu li span:hover, .headerNav #navMenu li a:hover {
+.headerNav .navbar #navMenu li span:hover, .headerNav .navbar #navMenu li a:hover {
   color: #de0000;
   cursor: pointer;
+}
+
+.headerNav .navbar #navMenu li label {
+  font-size: 20px;
+  color: #d6d6d6;
+  margin-bottom: 0px;
 }
 
 #headerNavBlue {
@@ -686,6 +698,18 @@ input[type="checkbox"]:checked + span:not(.lever):before {
   border-right-color: #0056b3;
 }
 
+#rgbSwitch label .lever {
+  background-color: #262626;
+}
+
+#rgbSwitch label input[type=checkbox]:checked + .lever:after {
+  background-color: #0056b3;
+}
+
+#rgbSwitch label input[type=checkbox]:checked + .lever {
+  background-color: #003167;
+}
+
 .gc-nav-blue {
   border-bottom: 1px solid #0E35B5;
 }
@@ -788,5 +812,50 @@ input[type="checkbox"]:checked + span:not(.lever):before {
   color: #2cc7ca;
   text-decoration: none;
   cursor: pointer;
+}
+
+.seperator-wrapper {
+  display: none;
+  width: 100%;
+}
+
+.seperator-wrapper .seperator {
+  width: 3000px;
+  height: 2px;
+  animation: rotate 3s infinite linear;
+  -webkit-animation: rotate 3s infinite linear;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    background-position: -3000px;
+  }
+  to {
+    background-position: 0px;
+  }
+}
+
+@keyframes rotate {
+  from {
+    background-position: -3000px;
+  }
+  to {
+    background-position: 0px;
+  }
+}
+
+.gradient {
+  background: #30ff90;
+  /* Old browsers */
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: -webkit-gradient(linear, left top, right top, from(#30ff90), color-stop(25%, #ed2ded), color-stop(50%, #c99826), color-stop(75%, #30ffe6), to(#30ff90));
+  background: linear-gradient(to right, #30ff90 0%, #ed2ded 25%, #c99826 50%, #30ffe6 75%, #30ff90 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30ff90', endColorstr='#30ff90',GradientType=1 );
+  /* IE6-9 */
 }
 /*# sourceMappingURL=style.css.map */
