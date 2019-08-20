@@ -26,7 +26,6 @@ body,a{
 }
 body{
     background-color: $bodyBlack;
-    overflow-x: hidden;
 }
 ul{
     list-style-type: none;
@@ -939,7 +938,8 @@ input[type="checkbox"]:checked + span:not(.lever):before{
 // RGB border
 .seperator-wrapper {
     display: none;
-    width: 100%;  
+    width: 100%;
+    overflow-x: hidden; 
     .seperator {
       width: 3000px;
       height: 2px;
