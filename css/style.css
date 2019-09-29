@@ -10,6 +10,7 @@ body, a {
 
 body {
   background-color: #0C0C0C;
+  padding-top: 56px;
 }
 
 ul {
@@ -69,6 +70,14 @@ ul {
   color: #0056b3;
   cursor: pointer;
   text-decoration: underline;
+}
+
+#headerNavBar {
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 
 .headerNav {

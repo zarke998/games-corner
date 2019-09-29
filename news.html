@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <title>Games Corner | News</title>
 </head>
 
@@ -57,61 +57,63 @@
             </div>
         </div>
     </div>
-    <div class="headerNav container-fluid px-2 px-sm-4">
-        <nav class="navbar navbar-expand-lg px-2">
-            <div id="logo" class="mr-md-5 ml-md-0 mx-auto py-lg-0 py-1">
-                <a href="index.html" class="d-flex align-items-center">
-                    <img src="images/logo.png" alt="Logo">
-                    <h1 class="text-uppercase mb-0 ml-2">Games corner</h1>
-                </a>
-            </div>
-            <button id="menuBtn" class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <div id="headerNavBar">
+        <div class="headerNav container-fluid px-2 px-sm-4">
+            <nav class="navbar navbar-expand-lg px-2">
+                <div id="logo" class="mr-md-5 ml-md-0 mx-auto py-lg-0 py-1">
+                    <a href="index.html" class="d-flex align-items-center">
+                        <img src="images/logo.png" alt="Logo">
+                        <h1 class="text-uppercase mb-0 ml-2">Games corner</h1>
+                    </a>
+                </div>
+                <button id="menuBtn" class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul id="navMenu" class="navbar-nav w-100">
-                    <li class="nav-item mx-1">
-                        <a class="nav-link text-center" href="news.html">News</a>
-                    </li>
-                    <li class="nav-item mx-1">
-                        <a class="nav-link text-center" href="game-list.html">Game list</a>
-                    </li>
-                    <li class="nav-item mx-1">
-                        <span class="nav-link text-center">Build your PC</span>
-                    </li>
-                    <li class="nav-item mx-1">
-                        <a class="nav-link text-center" href="game-art.html">Game art</a>
-                    </li>
-                    <li class="nav-item mx-1">
-                        <span class="nav-link text-center">Forum</span>
-                    </li>
-                    <li class="nav-item mx-1">
-                        <a class="nav-link text-center" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item ml-lg-auto">
-                        <div id="rgbSwitch" class="switch nav-link text-center">
-                            <label>
-                                <input type="checkbox">
-                                <span class="lever"></span>
-                                RGB
-                            </label>
-                        </div>
-                    </li>
-                    <li class="nav-item ml-4">
-                        <a class="nav-link text-center" href="#" data-toggle="modal" data-target="#loginModal">Account
-                            <i class="fas fa-user ml-2"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <section class="seperator-wrapper">
-        <div class="seperator gradient">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul id="navMenu" class="navbar-nav w-100">
+                        <li class="nav-item mx-1">
+                            <a class="nav-link text-center" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link text-center" href="game-list.html">Game list</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <span class="nav-link text-center">Build your PC</span>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link text-center" href="game-art.html">Game art</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <span class="nav-link text-center">Forum</span>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link text-center" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item ml-lg-auto">
+                            <div id="rgbSwitch" class="switch nav-link text-center">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="lever"></span>
+                                    RGB
+                                </label>
+                            </div>
+                        </li>
+                        <li class="nav-item ml-4">
+                            <a class="nav-link text-center" href="#" data-toggle="modal"
+                                data-target="#loginModal">Account <i class="fas fa-user ml-2"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </section>
+        <section class="seperator-wrapper">
+            <div class="seperator gradient">
+            </div>
+        </section>
+    </div>
     <div class="headerWallpaper container-fluid px-0">
         <img src="images/header-wallpapers/battlefield.jpg" class="w-100" alt="Wallpaper">
     </div>
@@ -313,7 +315,7 @@
 
 
 
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
 
 </body>
 

@@ -26,6 +26,7 @@ body,a{
 }
 body{
     background-color: $bodyBlack;
+    padding-top: 56px;
 }
 ul{
     list-style-type: none;
@@ -84,6 +85,14 @@ ul{
     }
     
     
+}
+#headerNavBar{
+    top: 0px;
+    left: 0px;
+    position: fixed;
+
+    width: 100%;
+    z-index: 100;
 }
 .headerNav{
     background-color: $topNavBlack;
