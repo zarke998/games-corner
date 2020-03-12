@@ -12,13 +12,22 @@ $(document).ready(function(){
       $(".seperator-wrapper").css("display", "block");
       $(".headerNav").css("border-bottom-style", "hidden");
       $("#footer").css("border-top-style", "hidden");
+
+      if(localStorage){
+        localStorage.setItem("rgb","on");
+      }
     }
     else{
       $(".seperator-wrapper").css("display", "none");
       $(".headerNav").css("border-bottom-style", "solid");
       $("#footer").css("border-top-style", "solid");
+
+      if(localStorage){
+        localStorage.setItem("rgb","off");
+      }
     }
-  }); 
+  });
+  configureRgb();
 
   initializeNoUiSlider();
 
@@ -35,6 +44,16 @@ function initializeCarousel(){
     });
     
     autoplayCarousel();
+}
+function configureRgb(){
+  if(localStorage && localStorage.getItem("rgb")){
+    let rgb = localStorage.getItem("rgb");
+
+    if(rgb == "on")
+      $("#rgbSwitch input").attr("checked",true).trigger("change");
+    else if(rgb == "off")
+      $("#rgbSwitch input").attr("checked",false).trigger("change");;
+  }
 }
 function autoplayCarousel(){
   $('.carousel.carousel-slider').carousel('next');
