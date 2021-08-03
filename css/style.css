@@ -762,10 +762,18 @@ input[type="checkbox"]:checked + span:not(.lever):before {
 }
 
 #rgbSwitch label input[type=checkbox]:checked + .lever:after {
-  background-color: #0056b3;
+  background-color: #de0000;
 }
 
 #rgbSwitch label input[type=checkbox]:checked + .lever {
+  background-color: #920000;
+}
+
+#headerNavBlue #rgbSwitch label input[type=checkbox]:checked + .lever:after {
+  background-color: #0056b3;
+}
+
+#headerNavBlue #rgbSwitch label input[type=checkbox]:checked + .lever {
   background-color: #003167;
 }
 

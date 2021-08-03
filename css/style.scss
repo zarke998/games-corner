@@ -5,6 +5,7 @@ $bodyBlack: #0C0C0C;
 $navLinkHoverRed: #de0000;
 $imageBorderGrey: #4D4D4D;
 $primaryBlue: #0E35B5;
+// blue: #154cff
 $frameLinkHoverBlue: #2cc7ca;
 $facebookBlue: #4167B2;
 $twitchPurple: #6848A4;
@@ -861,11 +862,21 @@ input[type="checkbox"]:checked + span:not(.lever):before{
 }
 //  switch lever circle color (active)
 #rgbSwitch label input[type=checkbox]:checked+.lever:after{
+    background-color: $navLinkHoverRed;
+}
+//  switch lever color (active)
+#rgbSwitch label input[type=checkbox]:checked+.lever{
+    background-color: darken($navLinkHoverRed, 15);
+}
+#headerNavBlue{
+    //  switch lever circle color (active)
+#rgbSwitch label input[type=checkbox]:checked+.lever:after{
     background-color: $linkHoverBlue;
 }
 //  switch lever color (active)
 #rgbSwitch label input[type=checkbox]:checked+.lever{
     background-color: darken($linkHoverBlue, 15);
+}   
 }
 
 // My custom classes
