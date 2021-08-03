@@ -58,6 +58,10 @@ ul {
   color: #4D4D4D;
 }
 
+#loginModal .modal-content .modal-body button:hover {
+  cursor: default;
+}
+
 #loginModal .modal-content .modal-body #rememberMe span {
   font-size: 18px;
 }
@@ -68,7 +72,11 @@ ul {
 
 #loginModal .modal-content .modal-body #signUpRedirect span:hover {
   color: #0056b3;
-  cursor: pointer;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   text-decoration: underline;
 }
 
@@ -113,6 +121,14 @@ ul {
   cursor: pointer;
 }
 
+.headerNav .navbar #navMenu li span:hover {
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .headerNav .navbar #navMenu li label {
   font-size: 20px;
   color: #d6d6d6;
@@ -125,6 +141,14 @@ ul {
 
 #headerNavBlue #navMenu li span:hover, #headerNavBlue #navMenu li a:hover {
   color: #0056b3;
+}
+
+#headerNavBlue #navMenu li span:hover {
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 #headerIntro #slider {
@@ -170,7 +194,10 @@ ul {
 .contentSectionMain .homeNewsItemText span:hover {
   color: #0056b3;
   text-decoration: underline;
-  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .contentSectionSide #upcomingGames .gc-table thead tr th:first-child {
@@ -214,6 +241,7 @@ ul {
 
 .contentSectionSide #forumSignUp button {
   width: 40%;
+  cursor: default;
 }
 
 .contentSectionSide #mostActiveForumMembers {
@@ -253,6 +281,10 @@ ul {
   border: 1px solid #4D4D4D;
 }
 
+.contentSectionSide #buildYourPc a:hover {
+  cursor: default;
+}
+
 #footer {
   background-color: #090909;
   border-top: 2px solid #4D4D4D;
@@ -272,8 +304,20 @@ ul {
   cursor: pointer;
 }
 
+#footerContent div ul li span:hover {
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 #footer p {
   font-size: 18px;
+}
+
+#newsletter button:hover {
+  cursor: default;
 }
 
 #twitchChannel .frameLinkOverlay span {
@@ -281,7 +325,11 @@ ul {
 }
 
 #twitchChannel .frameLinkOverlay span:hover {
-  cursor: pointer;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   color: #6848A4;
   text-decoration: underline;
 }
@@ -431,7 +479,10 @@ ul {
 
 #newsContent div span:hover, #videoGamesContent div span:hover {
   text-decoration: underline;
-  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   color: #0056b3;
 }
 
@@ -819,7 +870,10 @@ input[type="checkbox"]:checked + span:not(.lever):before {
 .frameLinkOverlay span:hover {
   color: #2cc7ca;
   text-decoration: none;
-  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .seperator-wrapper {

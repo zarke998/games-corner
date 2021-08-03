@@ -3,6 +3,7 @@
 
 $(document).ready(function(){
   initializeCarousel(); // Init carousel(bootstrap)
+  disableInactiveLinks();
 
   $('select').formSelect(); // Init select(materialize)
   $('.materialboxed').materialbox();  // Init mareliaboxed (materialize)
@@ -100,6 +101,8 @@ function initializeNoUiSlider() {
     
 }
 
-
-
-
+function disableInactiveLinks(){
+  $("a[href='#']").click((e) => {
+    e.preventDefault();
+  });
+}
